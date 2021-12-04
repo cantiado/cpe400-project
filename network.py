@@ -154,6 +154,7 @@ class Node:
         self.RREP = False
         self.RERR = False
         self.ACK = False
+        self.timeout.clear()
 
     def __forward(self, msg: str, route: list, dest = '', data = 'default data'):
         

@@ -92,13 +92,16 @@ def main():
         dest_id = nodes[destIndex].id  
         data = 'Test data starting at ' + nodes[srcIndex].id + " and ending at " + nodes[destIndex].id #Data with a little extra info
         print(f'Node {src.id} sending data to Node {dest_id}')
+        crash(nodes[random.randint(0,num_nodes-1)]) 
         src.dsr(dest_id,data)
         #run = Thread(target=src.dsr,args=(dest_id,data))
         #run.start()
         #run.join()  # waits for 'run' thread to finish
         counter += 1
         sleep(1)
-        crash(nodes[random.randint(0,num_nodes-1)]) 
+        while Node.result == -1:    # waits for a result before starting next run
+            pass
+        Node.result = -1
         for n in nodes:
             n.resetflags()  
         logging.info(f'Nodes={nodes}')
