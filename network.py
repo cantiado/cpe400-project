@@ -68,12 +68,14 @@ class Node:
                             self.RERR = False
                         finally:
                             self.lock.release()
+                        retry += 1
 
-                    # else, try once more
+                    # else, timeout, try once more
                     else:
                         retry += 1
         # if found route but all failed, no other routes available
         if hasroute:
+            print('here')
             print(f'Node {self.id} unable to forward data to Node {dest}')
             # prompt user to continue trying to RREQ. default is yes
             x = input(f'Continue trying? [Y/N]\n')
@@ -82,7 +84,7 @@ class Node:
             if x == 'N':
                 Node.result = 0
                 return
-
+        self.resetflags()
         # else, begin RREQ
         # set RREQ flag
         self.lock.acquire()
@@ -135,6 +137,7 @@ class Node:
 
         # else, timeout
         else:
+            print('there')
             print(f'Node {self.id} timed out. Unable to find route to Node {dest}')
         
         # prompt user to continue trying. default is yes
@@ -143,7 +146,6 @@ class Node:
             Node.result = 0
             return
         else:
-        
             self.resetflags()
             self.dsr(dest,data)
 
