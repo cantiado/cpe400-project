@@ -1,0 +1,1297 @@
+2021-12-04 18:00:43,915 : INFO : INITIALIZATION =============================================
+2021-12-04 18:00:43,915 : INFO : <class Node> RTT=3 s, recover_time=0.1 s, auto_recover=True
+2021-12-04 18:00:43,915 : INFO : <class Link> recover_time=0.1 s, auto_recover=True
+2021-12-04 18:00:43,915 : INFO : Number of nodes=16
+2021-12-04 18:00:43,915 : INFO : Number of links=21
+2021-12-04 18:00:43,915 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:00:43,915 : INFO : TEST START =================================================
+2021-12-04 18:00:43,915 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:00:43,915 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:00:43,916 : DEBUG : F RREQ ['F'] M
+2021-12-04 18:00:43,916 : DEBUG : B RREQ ['F', 'B'] M
+2021-12-04 18:00:43,916 : DEBUG : C RREQ ['F', 'B', 'C'] M
+2021-12-04 18:00:43,917 : DEBUG : D RREQ ['F', 'B', 'C', 'D'] M
+2021-12-04 18:00:43,917 : DEBUG : G RREQ ['F', 'G'] M
+2021-12-04 18:00:43,918 : DEBUG : H RREQ ['F', 'G', 'H'] M
+2021-12-04 18:00:43,918 : DEBUG : I RREQ ['F', 'G', 'H', 'I'] M
+2021-12-04 18:00:48,146 : DEBUG : F RREQ ['F'] M
+2021-12-04 18:00:53,435 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:00:53,436 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:00:53,437 : DEBUG : N RREQ ['N'] M
+2021-12-04 18:00:53,438 : DEBUG : L RREQ ['N', 'L'] M
+2021-12-04 18:00:53,438 : DEBUG : K RREQ ['N', 'L', 'K'] M
+2021-12-04 18:00:53,439 : DEBUG : M RREP ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,440 : DEBUG : K RREP ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,441 : DEBUG : L RREP ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,442 : DEBUG : O RREQ ['N', 'L', 'O'] M
+2021-12-04 18:00:53,443 : DEBUG : N DATA ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,444 : DEBUG : L DATA ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,444 : DEBUG : K DATA ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,444 : DEBUG : M DACK ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,445 : DEBUG : K DACK ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,451 : DEBUG : L DACK ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,500 : DEBUG : N SACK ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,500 : DEBUG : L SACK ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,500 : DEBUG : K SACK ['N', 'L', 'K', 'M'] 
+2021-12-04 18:00:53,501 : INFO : M received data: Test data starting at N and ending at M
+2021-12-04 18:00:53,501 : INFO : Total hops: 9
+2021-12-04 18:00:54,504 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:00:54,504 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:00:54,506 : DEBUG : F RREQ ['F'] K
+2021-12-04 18:00:54,506 : DEBUG : B RREQ ['F', 'B'] K
+2021-12-04 18:00:54,506 : DEBUG : C RREQ ['F', 'B', 'C'] K
+2021-12-04 18:00:54,508 : DEBUG : G RREQ ['F', 'G'] K
+2021-12-04 18:00:54,509 : DEBUG : H RREQ ['F', 'G', 'H'] K
+2021-12-04 18:00:54,509 : DEBUG : I RREQ ['F', 'G', 'H', 'I'] K
+2021-12-04 18:00:54,510 : DEBUG : J RREQ ['F', 'G', 'H', 'I', 'J'] K
+2021-12-04 18:00:54,511 : DEBUG : K RREP ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,511 : DEBUG : J RREP ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,512 : DEBUG : I RREP ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,512 : DEBUG : H RREP ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,519 : DEBUG : G RREP ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,537 : DEBUG : F DATA ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,537 : DEBUG : G DATA ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,537 : DEBUG : H DATA ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,538 : DEBUG : I DATA ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,538 : DEBUG : J DATA ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,538 : DEBUG : K DACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,538 : DEBUG : J DACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,539 : DEBUG : I DACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,539 : DEBUG : H DACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,539 : DEBUG : G DACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,545 : DEBUG : F SACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,545 : DEBUG : G SACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,546 : DEBUG : H SACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,546 : DEBUG : I SACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,546 : DEBUG : J SACK ['F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:00:54,558 : INFO : K received data: Test data starting at F and ending at K
+2021-12-04 18:00:54,559 : INFO : Total hops: 15
+2021-12-04 18:00:55,549 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:00:55,549 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:00:55,551 : DEBUG : P RREQ ['P'] A
+2021-12-04 18:00:55,552 : DEBUG : L RREQ ['P', 'L'] A
+2021-12-04 18:00:55,552 : DEBUG : K RREQ ['P', 'L', 'K'] A
+2021-12-04 18:00:55,553 : DEBUG : J RREQ ['P', 'L', 'K', 'J'] A
+2021-12-04 18:00:55,554 : DEBUG : N RREQ ['P', 'L', 'N'] A
+2021-12-04 18:00:55,555 : DEBUG : O RREQ ['P', 'L', 'N', 'O'] A
+2021-12-04 18:00:59,748 : DEBUG : P RREQ ['P'] A
+2021-12-04 18:01:05,004 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:01:05,005 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:01:05,005 : DEBUG : H DATA ['H', 'G'] 
+2021-12-04 18:01:05,006 : DEBUG : G DACK ['H', 'G'] 
+2021-12-04 18:01:05,012 : DEBUG : H SACK ['H', 'G'] 
+2021-12-04 18:01:05,013 : INFO : G received data: Test data starting at H and ending at G
+2021-12-04 18:01:05,013 : INFO : Total hops: 3
+2021-12-04 18:01:06,017 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:01:06,017 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:01:06,018 : DEBUG : F RREQ ['F'] M
+2021-12-04 18:01:06,018 : DEBUG : D RREQ ['F', 'D'] M
+2021-12-04 18:01:06,019 : DEBUG : C RREQ ['F', 'D', 'C'] M
+2021-12-04 18:01:06,019 : DEBUG : E RREQ ['F', 'D', 'E'] M
+2021-12-04 18:01:06,020 : DEBUG : G RREQ ['F', 'G'] M
+2021-12-04 18:01:06,020 : DEBUG : H RREQ ['F', 'G', 'H'] M
+2021-12-04 18:01:10,155 : DEBUG : F RREQ ['F'] M
+2021-12-04 18:01:10,155 : DEBUG : B RREQ ['F', 'B'] M
+2021-12-04 18:01:10,156 : DEBUG : A RREQ ['F', 'B', 'A'] M
+2021-12-04 18:01:10,157 : DEBUG : I RREQ ['F', 'I'] M
+2021-12-04 18:01:10,158 : DEBUG : J RREQ ['F', 'I', 'J'] M
+2021-12-04 18:01:10,158 : DEBUG : K RREQ ['F', 'I', 'J', 'K'] M
+2021-12-04 18:01:10,159 : DEBUG : L RREQ ['F', 'I', 'J', 'K', 'L'] M
+2021-12-04 18:01:10,159 : DEBUG : M RREP ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,159 : DEBUG : L RREP ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,160 : DEBUG : K RREP ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,160 : DEBUG : N RREQ ['F', 'I', 'J', 'K', 'L', 'N'] M
+2021-12-04 18:01:10,160 : DEBUG : J RREP ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,161 : DEBUG : I RREP ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,161 : DEBUG : O RREQ ['F', 'I', 'J', 'K', 'L', 'N', 'O'] M
+2021-12-04 18:01:10,162 : DEBUG : P RREQ ['F', 'I', 'J', 'K', 'L', 'N', 'O', 'P'] M
+2021-12-04 18:01:10,164 : DEBUG : F DATA ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,164 : DEBUG : I DATA ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,164 : DEBUG : J DATA ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,164 : DEBUG : K DATA ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,175 : DEBUG : L DATA ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,181 : DEBUG : M DACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,193 : DEBUG : L DACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,194 : DEBUG : K DACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,194 : DEBUG : J DACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,194 : DEBUG : I DACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,194 : DEBUG : F SACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,194 : DEBUG : I SACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,194 : DEBUG : J SACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,195 : DEBUG : K SACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,195 : DEBUG : L SACK ['F', 'I', 'J', 'K', 'L', 'M'] 
+2021-12-04 18:01:10,214 : INFO : M received data: Test data starting at F and ending at M
+2021-12-04 18:01:10,214 : INFO : Total hops: 15
+2021-12-04 18:01:11,197 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:01:11,197 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:01:11,198 : DEBUG : H DATA ['H', 'G', 'F'] 
+2021-12-04 18:01:11,199 : DEBUG : G DATA ['H', 'G', 'F'] 
+2021-12-04 18:01:11,199 : DEBUG : F DACK ['H', 'G', 'F'] 
+2021-12-04 18:01:11,199 : DEBUG : G DACK ['H', 'G', 'F'] 
+2021-12-04 18:01:11,200 : DEBUG : H SACK ['H', 'G', 'F'] 
+2021-12-04 18:01:11,200 : DEBUG : G SACK ['H', 'G', 'F'] 
+2021-12-04 18:01:11,201 : INFO : F received data: Test data starting at H and ending at F
+2021-12-04 18:01:11,202 : INFO : Total hops: 6
+2021-12-04 18:01:12,201 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:01:12,201 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:01:12,202 : DEBUG : D RREQ ['D'] K
+2021-12-04 18:01:12,203 : DEBUG : C RREQ ['D', 'C'] K
+2021-12-04 18:01:12,203 : DEBUG : B RREQ ['D', 'C', 'B'] K
+2021-12-04 18:01:12,204 : DEBUG : A RREQ ['D', 'C', 'B', 'A'] K
+2021-12-04 18:01:12,205 : DEBUG : F RREQ ['D', 'C', 'B', 'F'] K
+2021-12-04 18:01:12,206 : DEBUG : G RREQ ['D', 'C', 'B', 'F', 'G'] K
+2021-12-04 18:01:12,207 : DEBUG : H RREQ ['D', 'C', 'B', 'F', 'G', 'H'] K
+2021-12-04 18:01:12,207 : DEBUG : I RREQ ['D', 'C', 'B', 'F', 'G', 'H', 'I'] K
+2021-12-04 18:01:12,208 : DEBUG : J RREQ ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J'] K
+2021-12-04 18:01:12,208 : DEBUG : K RREP ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,209 : DEBUG : J RREP ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,209 : DEBUG : I RREP ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,211 : DEBUG : H RREP ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,211 : DEBUG : G RREP ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,211 : DEBUG : F RREP ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,212 : DEBUG : B RREP ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,223 : DEBUG : C RREP ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,235 : DEBUG : D DATA ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,236 : DEBUG : C DATA ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,236 : DEBUG : B DATA ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,242 : DEBUG : F DATA ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,258 : DEBUG : G DATA ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,258 : DEBUG : H DATA ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,265 : DEBUG : I DATA ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,265 : DEBUG : J DATA ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,277 : DEBUG : K DACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,278 : DEBUG : J DACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,290 : DEBUG : I DACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,290 : DEBUG : H DACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,303 : DEBUG : G DACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,303 : DEBUG : F DACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,316 : DEBUG : B DACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,316 : DEBUG : C DACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,322 : DEBUG : D SACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,322 : DEBUG : C SACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,334 : DEBUG : B SACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,334 : DEBUG : F SACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,347 : DEBUG : G SACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,347 : DEBUG : H SACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,359 : DEBUG : I SACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,359 : DEBUG : J SACK ['D', 'C', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] 
+2021-12-04 18:01:12,359 : INFO : K received data: Test data starting at D and ending at K
+2021-12-04 18:01:12,360 : INFO : Total hops: 24
+2021-12-04 18:01:13,347 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:01:13,348 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:01:13,349 : DEBUG : C DATA ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,350 : DEBUG : B DATA ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,350 : DEBUG : F DATA ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,351 : DEBUG : G DACK ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,352 : DEBUG : F DACK ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,352 : DEBUG : B DACK ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,353 : DEBUG : C SACK ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,353 : DEBUG : B SACK ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,353 : DEBUG : F SACK ['C', 'B', 'F', 'G'] 
+2021-12-04 18:01:13,354 : INFO : G received data: Test data starting at C and ending at G
+2021-12-04 18:01:13,354 : INFO : Total hops: 9
+2021-12-04 18:01:14,354 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:01:14,355 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 18:01:14,357 : DEBUG : C RREQ ['C'] A
+2021-12-04 18:01:14,357 : DEBUG : B RREQ ['C', 'B'] A
+2021-12-04 18:01:14,357 : DEBUG : A RREP ['C', 'B', 'A'] 
+2021-12-04 18:01:14,358 : DEBUG : B RREP ['C', 'B', 'A'] 
+2021-12-04 18:01:14,359 : DEBUG : F RREQ ['C', 'B', 'F'] A
+2021-12-04 18:01:14,360 : DEBUG : G RREQ ['C', 'B', 'F', 'G'] A
+2021-12-04 18:01:14,361 : DEBUG : H RREQ ['C', 'B', 'F', 'G', 'H'] A
+2021-12-04 18:01:14,362 : DEBUG : C DATA ['C', 'B', 'A'] 
+2021-12-04 18:01:14,363 : DEBUG : B DATA ['C', 'B', 'A'] 
+2021-12-04 18:01:14,363 : DEBUG : A DACK ['C', 'B', 'A'] 
+2021-12-04 18:01:14,363 : DEBUG : B DACK ['C', 'B', 'A'] 
+2021-12-04 18:01:14,398 : DEBUG : C SACK ['C', 'B', 'A'] 
+2021-12-04 18:01:14,411 : DEBUG : B SACK ['C', 'B', 'A'] 
+2021-12-04 18:01:14,411 : INFO : A received data: Test data starting at C and ending at A
+2021-12-04 18:01:14,411 : INFO : Total hops: 6
+2021-12-04 18:01:15,413 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 18:01:15,413 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:34,403 : INFO : INITIALIZATION =============================================
+2021-12-04 22:41:34,403 : INFO : <class Node> RTT=3 s, recover_time=0.1 s, auto_recover=True
+2021-12-04 22:41:34,403 : INFO : <class Link> recover_time=0.1 s, auto_recover=True
+2021-12-04 22:41:34,404 : INFO : Number of nodes=16
+2021-12-04 22:41:34,404 : INFO : Number of links=21
+2021-12-04 22:41:34,404 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:34,404 : INFO : TEST START =================================================
+2021-12-04 22:41:34,404 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:34,404 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:34,405 : DEBUG : D RREQ ['D'] P
+2021-12-04 22:41:34,405 : DEBUG : C RREQ ['D', 'C'] P
+2021-12-04 22:41:34,405 : DEBUG : B RREQ ['D', 'C', 'B'] P
+2021-12-04 22:41:34,405 : DEBUG : A RREQ ['D', 'C', 'B', 'A'] P
+2021-12-04 22:41:34,406 : DEBUG : F RREQ ['D', 'C', 'B', 'F'] P
+2021-12-04 22:41:34,406 : DEBUG : I RREQ ['D', 'C', 'B', 'F', 'I'] P
+2021-12-04 22:41:38,977 : DEBUG : D RREQ ['D'] P
+2021-12-04 22:41:38,978 : DEBUG : E RREQ ['D', 'E'] P
+2021-12-04 22:41:44,343 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:44,344 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:44,345 : DEBUG : F RREQ ['F'] J
+2021-12-04 22:41:44,346 : DEBUG : B RREQ ['F', 'B'] J
+2021-12-04 22:41:44,347 : DEBUG : A RREQ ['F', 'B', 'A'] J
+2021-12-04 22:41:44,348 : DEBUG : C RREQ ['F', 'B', 'C'] J
+2021-12-04 22:41:44,348 : DEBUG : D RREQ ['F', 'B', 'C', 'D'] J
+2021-12-04 22:41:44,349 : DEBUG : E RREQ ['F', 'B', 'C', 'D', 'E'] J
+2021-12-04 22:41:44,350 : DEBUG : G RREQ ['F', 'G'] J
+2021-12-04 22:41:44,351 : DEBUG : H RREQ ['F', 'G', 'H'] J
+2021-12-04 22:41:44,351 : DEBUG : I RREQ ['F', 'G', 'H', 'I'] J
+2021-12-04 22:41:44,352 : DEBUG : J RREP ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,353 : DEBUG : I RREP ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,353 : DEBUG : H RREP ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,354 : DEBUG : G RREP ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,354 : DEBUG : F DATA ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,355 : DEBUG : G DATA ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,355 : DEBUG : H DATA ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,361 : DEBUG : I DATA ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,361 : DEBUG : J DACK ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,361 : DEBUG : I DACK ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,361 : DEBUG : H DACK ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,362 : DEBUG : G DACK ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,403 : DEBUG : F SACK ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,415 : DEBUG : G SACK ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,415 : DEBUG : H SACK ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,427 : DEBUG : I SACK ['F', 'G', 'H', 'I', 'J'] 
+2021-12-04 22:41:44,427 : INFO : J received data: Test data starting at F and ending at J
+2021-12-04 22:41:44,427 : INFO : Total hops: 12
+2021-12-04 22:41:45,419 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:45,419 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:45,420 : DEBUG : M RREQ ['M'] A
+2021-12-04 22:41:45,420 : DEBUG : K RREQ ['M', 'K'] A
+2021-12-04 22:41:45,421 : DEBUG : J RREQ ['M', 'K', 'J'] A
+2021-12-04 22:41:45,421 : DEBUG : I RREQ ['M', 'K', 'J', 'I'] A
+2021-12-04 22:41:45,421 : DEBUG : F RREQ ['M', 'K', 'J', 'I', 'F'] A
+2021-12-04 22:41:45,422 : DEBUG : B RREQ ['M', 'K', 'J', 'I', 'F', 'B'] A
+2021-12-04 22:41:45,423 : DEBUG : A RREP ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,423 : DEBUG : B RREP ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,424 : DEBUG : C RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'C'] A
+2021-12-04 22:41:45,424 : DEBUG : F RREP ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,425 : DEBUG : D RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] A
+2021-12-04 22:41:45,426 : DEBUG : I RREP ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,426 : DEBUG : J RREP ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,427 : DEBUG : E RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D', 'E'] A
+2021-12-04 22:41:45,427 : DEBUG : K RREP ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,430 : DEBUG : H RREQ ['M', 'K', 'J', 'I', 'H'] A
+2021-12-04 22:41:45,432 : DEBUG : L RREQ ['M', 'K', 'L'] A
+2021-12-04 22:41:45,433 : DEBUG : N RREQ ['M', 'K', 'L', 'N'] A
+2021-12-04 22:41:45,433 : DEBUG : O RREQ ['M', 'K', 'L', 'N', 'O'] A
+2021-12-04 22:41:45,434 : DEBUG : P RREQ ['M', 'K', 'L', 'N', 'O', 'P'] A
+2021-12-04 22:41:45,436 : DEBUG : M DATA ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,436 : DEBUG : K DATA ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,436 : DEBUG : J DATA ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,448 : DEBUG : I DATA ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,453 : DEBUG : F DATA ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,454 : DEBUG : B DATA ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,460 : DEBUG : A DACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,460 : DEBUG : B DACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,460 : DEBUG : F DACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,460 : DEBUG : I DACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,460 : DEBUG : J DACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,461 : DEBUG : K DACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,467 : DEBUG : M SACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,467 : DEBUG : K SACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,467 : DEBUG : J SACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,467 : DEBUG : I SACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,467 : DEBUG : F SACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,479 : DEBUG : B SACK ['M', 'K', 'J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:41:45,484 : INFO : A received data: Test data starting at M and ending at A
+2021-12-04 22:41:45,484 : INFO : Total hops: 18
+2021-12-04 22:41:46,469 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:46,469 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:46,471 : DEBUG : M RREQ ['M'] D
+2021-12-04 22:41:46,471 : DEBUG : N RREQ ['M', 'N'] D
+2021-12-04 22:41:51,136 : DEBUG : M RREQ ['M'] D
+2021-12-04 22:41:51,136 : DEBUG : K RREQ ['M', 'K'] D
+2021-12-04 22:41:51,137 : DEBUG : J RREQ ['M', 'K', 'J'] D
+2021-12-04 22:41:51,137 : DEBUG : I RREQ ['M', 'K', 'J', 'I'] D
+2021-12-04 22:41:51,137 : DEBUG : F RREQ ['M', 'K', 'J', 'I', 'F'] D
+2021-12-04 22:41:51,138 : DEBUG : B RREQ ['M', 'K', 'J', 'I', 'F', 'B'] D
+2021-12-04 22:41:51,138 : DEBUG : A RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'A'] D
+2021-12-04 22:41:51,138 : DEBUG : C RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'C'] D
+2021-12-04 22:41:51,139 : DEBUG : D RREP ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,139 : DEBUG : C RREP ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,139 : DEBUG : B RREP ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,140 : DEBUG : F RREP ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,140 : DEBUG : I RREP ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,141 : DEBUG : G RREQ ['M', 'K', 'J', 'I', 'F', 'G'] D
+2021-12-04 22:41:51,141 : DEBUG : J RREP ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,141 : DEBUG : K RREP ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,141 : DEBUG : H RREQ ['M', 'K', 'J', 'I', 'F', 'G', 'H'] D
+2021-12-04 22:41:51,143 : DEBUG : L RREQ ['M', 'K', 'L'] D
+2021-12-04 22:41:51,143 : DEBUG : O RREQ ['M', 'K', 'L', 'O'] D
+2021-12-04 22:41:51,144 : DEBUG : P RREQ ['M', 'K', 'L', 'O', 'P'] D
+2021-12-04 22:41:51,145 : DEBUG : M DATA ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,146 : DEBUG : K DATA ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,146 : DEBUG : J DATA ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,152 : DEBUG : I DATA ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,158 : DEBUG : F DATA ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,158 : DEBUG : B DATA ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,158 : DEBUG : C DATA ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,169 : DEBUG : D DACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,169 : DEBUG : C DACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,182 : DEBUG : B DACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,182 : DEBUG : F DACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,182 : DEBUG : I DACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,182 : DEBUG : J DACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,221 : DEBUG : K DACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,226 : DEBUG : M SACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,226 : DEBUG : K SACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,226 : DEBUG : J SACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,226 : DEBUG : I SACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,227 : DEBUG : F SACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,232 : DEBUG : B SACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,232 : DEBUG : C SACK ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] 
+2021-12-04 22:41:51,239 : INFO : D received data: Test data starting at M and ending at D
+2021-12-04 22:41:51,239 : INFO : Total hops: 21
+2021-12-04 22:41:52,236 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:52,237 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:52,237 : DEBUG : O RREQ ['O'] G
+2021-12-04 22:41:52,238 : DEBUG : L RREQ ['O', 'L'] G
+2021-12-04 22:41:52,238 : DEBUG : K RREQ ['O', 'L', 'K'] G
+2021-12-04 22:41:52,239 : DEBUG : J RREQ ['O', 'L', 'K', 'J'] G
+2021-12-04 22:41:52,239 : DEBUG : I RREQ ['O', 'L', 'K', 'J', 'I'] G
+2021-12-04 22:41:52,240 : DEBUG : F RREQ ['O', 'L', 'K', 'J', 'I', 'F'] G
+2021-12-04 22:41:52,240 : DEBUG : B RREQ ['O', 'L', 'K', 'J', 'I', 'F', 'B'] G
+2021-12-04 22:41:52,240 : DEBUG : A RREQ ['O', 'L', 'K', 'J', 'I', 'F', 'B', 'A'] G
+2021-12-04 22:41:52,241 : DEBUG : C RREQ ['O', 'L', 'K', 'J', 'I', 'F', 'B', 'C'] G
+2021-12-04 22:41:52,242 : DEBUG : D RREQ ['O', 'L', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] G
+2021-12-04 22:41:52,244 : DEBUG : G RREP ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,244 : DEBUG : F RREP ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,245 : DEBUG : I RREP ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,245 : DEBUG : H RREQ ['O', 'L', 'K', 'J', 'I', 'H'] G
+2021-12-04 22:41:52,246 : DEBUG : J RREP ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,246 : DEBUG : K RREP ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,247 : DEBUG : L RREP ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,248 : DEBUG : M RREQ ['O', 'L', 'K', 'M'] G
+2021-12-04 22:41:52,248 : DEBUG : N RREQ ['O', 'L', 'K', 'M', 'N'] G
+2021-12-04 22:41:52,250 : DEBUG : P RREQ ['O', 'L', 'P'] G
+2021-12-04 22:41:52,251 : DEBUG : O DATA ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,251 : DEBUG : L DATA ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,251 : DEBUG : K DATA ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,263 : DEBUG : J DATA ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,269 : DEBUG : I DATA ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,270 : DEBUG : F DATA ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,270 : DEBUG : G DACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,270 : DEBUG : F DACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,304 : DEBUG : I DACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,317 : DEBUG : J DACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,317 : DEBUG : K DACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,353 : DEBUG : L DACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,353 : DEBUG : O SACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,354 : DEBUG : L SACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,365 : DEBUG : K SACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,365 : DEBUG : J SACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,365 : DEBUG : I SACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,365 : DEBUG : F SACK ['O', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:41:52,365 : INFO : G received data: Test data starting at O and ending at G
+2021-12-04 22:41:52,366 : INFO : Total hops: 18
+2021-12-04 22:41:53,369 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:53,369 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:53,371 : DEBUG : E DATA ['E', 'D'] 
+2021-12-04 22:41:53,371 : DEBUG : D DACK ['E', 'D'] 
+2021-12-04 22:41:53,372 : DEBUG : E SACK ['E', 'D'] 
+2021-12-04 22:41:53,383 : INFO : D received data: Test data starting at E and ending at D
+2021-12-04 22:41:53,384 : INFO : Total hops: 3
+2021-12-04 22:41:54,389 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:54,389 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:54,390 : DEBUG : B DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,391 : DEBUG : F DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,391 : DEBUG : I DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,391 : DEBUG : J DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,391 : DEBUG : J RERR ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,398 : DEBUG : I RERR ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,409 : DEBUG : F RERR ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,427 : DEBUG : B DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,427 : DEBUG : F DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,427 : DEBUG : I DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,427 : DEBUG : J DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,428 : DEBUG : J RERR ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,445 : DEBUG : I RERR ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:54,451 : DEBUG : F RERR ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,589 : DEBUG : B RREQ ['B'] O
+2021-12-04 22:41:57,589 : DEBUG : A RREQ ['B', 'A'] O
+2021-12-04 22:41:57,590 : DEBUG : C RREQ ['B', 'C'] O
+2021-12-04 22:41:57,591 : DEBUG : D RREQ ['B', 'C', 'D'] O
+2021-12-04 22:41:57,592 : DEBUG : E RREQ ['B', 'C', 'D', 'E'] O
+2021-12-04 22:41:57,592 : DEBUG : F RREQ ['B', 'C', 'D', 'F'] O
+2021-12-04 22:41:57,594 : DEBUG : G RREQ ['B', 'C', 'D', 'F', 'G'] O
+2021-12-04 22:41:57,594 : DEBUG : H RREQ ['B', 'C', 'D', 'F', 'G', 'H'] O
+2021-12-04 22:41:57,595 : DEBUG : I RREQ ['B', 'C', 'D', 'F', 'G', 'H', 'I'] O
+2021-12-04 22:41:57,596 : DEBUG : J RREQ ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J'] O
+2021-12-04 22:41:57,596 : DEBUG : K RREQ ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K'] O
+2021-12-04 22:41:57,597 : DEBUG : L RREQ ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L'] O
+2021-12-04 22:41:57,597 : DEBUG : M RREQ ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'] O
+2021-12-04 22:41:57,598 : DEBUG : N RREQ ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'] O
+2021-12-04 22:41:57,599 : DEBUG : O RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,600 : DEBUG : N RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,600 : DEBUG : M RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,601 : DEBUG : L RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,601 : DEBUG : K RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,602 : DEBUG : P RREQ ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'P'] O
+2021-12-04 22:41:57,602 : DEBUG : J RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,603 : DEBUG : I RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,603 : DEBUG : H RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,603 : DEBUG : G RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,604 : DEBUG : F RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,615 : DEBUG : D RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,615 : DEBUG : C RREP ['B', 'C', 'D', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] 
+2021-12-04 22:41:57,615 : DEBUG : B DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,615 : DEBUG : F DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,616 : DEBUG : I DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,616 : DEBUG : J DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,616 : DEBUG : K DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,622 : DEBUG : L DATA ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,623 : DEBUG : O DACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,623 : DEBUG : L DACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,633 : DEBUG : K DACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,640 : DEBUG : J DACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,640 : DEBUG : I DACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,640 : DEBUG : F DACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,646 : DEBUG : B SACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,647 : DEBUG : F SACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,647 : DEBUG : I SACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,647 : DEBUG : J SACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,647 : DEBUG : K SACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,658 : DEBUG : L SACK ['B', 'F', 'I', 'J', 'K', 'L', 'O'] 
+2021-12-04 22:41:57,659 : INFO : O received data: Test data starting at B and ending at O
+2021-12-04 22:41:57,659 : INFO : Total hops: 32
+2021-12-04 22:41:58,651 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:58,652 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:58,652 : DEBUG : H DATA ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,652 : DEBUG : I DATA ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,652 : DEBUG : J DATA ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,659 : DEBUG : K DATA ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,672 : DEBUG : M DACK ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,672 : DEBUG : K DACK ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,673 : DEBUG : J DACK ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,673 : DEBUG : I DACK ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,673 : DEBUG : H SACK ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,673 : DEBUG : I SACK ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,673 : DEBUG : J SACK ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,685 : DEBUG : K SACK ['H', 'I', 'J', 'K', 'M'] 
+2021-12-04 22:41:58,697 : INFO : M received data: Test data starting at H and ending at M
+2021-12-04 22:41:58,697 : INFO : Total hops: 12
+2021-12-04 22:41:59,678 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:41:59,679 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:41:59,679 : DEBUG : M DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:41:59,680 : DEBUG : L DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:41:59,681 : DEBUG : L RERR ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:41:59,681 : DEBUG : M DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:41:59,682 : DEBUG : L DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:41:59,682 : DEBUG : L RERR ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,811 : DEBUG : M RREQ ['M'] H
+2021-12-04 22:42:02,811 : DEBUG : K RREQ ['M', 'K'] H
+2021-12-04 22:42:02,812 : DEBUG : J RREQ ['M', 'K', 'J'] H
+2021-12-04 22:42:02,812 : DEBUG : I RREQ ['M', 'K', 'J', 'I'] H
+2021-12-04 22:42:02,813 : DEBUG : F RREQ ['M', 'K', 'J', 'I', 'F'] H
+2021-12-04 22:42:02,813 : DEBUG : B RREQ ['M', 'K', 'J', 'I', 'F', 'B'] H
+2021-12-04 22:42:02,813 : DEBUG : A RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'A'] H
+2021-12-04 22:42:02,814 : DEBUG : C RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'C'] H
+2021-12-04 22:42:02,815 : DEBUG : D RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] H
+2021-12-04 22:42:02,815 : DEBUG : E RREQ ['M', 'K', 'J', 'I', 'F', 'B', 'C', 'D', 'E'] H
+2021-12-04 22:42:02,816 : DEBUG : G RREQ ['M', 'K', 'J', 'I', 'F', 'G'] H
+2021-12-04 22:42:02,816 : DEBUG : H RREP ['M', 'K', 'J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:42:02,817 : DEBUG : G RREP ['M', 'K', 'J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:42:02,817 : DEBUG : F RREP ['M', 'K', 'J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:42:02,817 : DEBUG : I RREP ['M', 'K', 'J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:42:02,818 : DEBUG : J RREP ['M', 'K', 'J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:42:02,819 : DEBUG : K RREP ['M', 'K', 'J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:42:02,819 : DEBUG : L RREQ ['M', 'K', 'L'] H
+2021-12-04 22:42:02,820 : DEBUG : N RREQ ['M', 'K', 'L', 'N'] H
+2021-12-04 22:42:02,820 : DEBUG : O RREQ ['M', 'K', 'L', 'N', 'O'] H
+2021-12-04 22:42:02,821 : DEBUG : P RREQ ['M', 'K', 'L', 'N', 'O', 'P'] H
+2021-12-04 22:42:02,823 : DEBUG : M DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,823 : DEBUG : L DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,829 : DEBUG : K DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,842 : DEBUG : J DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,854 : DEBUG : I DATA ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,854 : DEBUG : H DACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,854 : DEBUG : I DACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,872 : DEBUG : J DACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,872 : DEBUG : K DACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,872 : DEBUG : L DACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,903 : DEBUG : M SACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,909 : DEBUG : L SACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,909 : DEBUG : K SACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,910 : DEBUG : J SACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,910 : DEBUG : I SACK ['M', 'L', 'K', 'J', 'I', 'H'] 
+2021-12-04 22:42:02,910 : INFO : H received data: Test data starting at M and ending at H
+2021-12-04 22:42:02,910 : INFO : Total hops: 21
+2021-12-04 22:42:03,914 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:42:03,915 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:42:03,916 : DEBUG : N DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G'] 
+2021-12-04 22:42:03,916 : DEBUG : N DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G'] 
+2021-12-04 22:42:05,925 : DEBUG : N RREQ ['N'] G
+2021-12-04 22:42:05,925 : DEBUG : L RREQ ['N', 'L'] G
+2021-12-04 22:42:05,926 : DEBUG : K RREQ ['N', 'L', 'K'] G
+2021-12-04 22:42:05,926 : DEBUG : J RREQ ['N', 'L', 'K', 'J'] G
+2021-12-04 22:42:05,926 : DEBUG : I RREQ ['N', 'L', 'K', 'J', 'I'] G
+2021-12-04 22:42:05,926 : DEBUG : F RREQ ['N', 'L', 'K', 'J', 'I', 'F'] G
+2021-12-04 22:42:05,927 : DEBUG : B RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'B'] G
+2021-12-04 22:42:05,927 : DEBUG : A RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'B', 'A'] G
+2021-12-04 22:42:05,928 : DEBUG : C RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'B', 'C'] G
+2021-12-04 22:42:05,929 : DEBUG : D RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'B', 'C', 'D'] G
+2021-12-04 22:42:05,930 : DEBUG : E RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'B', 'C', 'D', 'E'] G
+2021-12-04 22:42:05,931 : DEBUG : G RREP ['N', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:42:05,931 : DEBUG : F RREP ['N', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:42:05,932 : DEBUG : I RREP ['N', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:42:05,932 : DEBUG : H RREQ ['N', 'L', 'K', 'J', 'I', 'H'] G
+2021-12-04 22:42:05,933 : DEBUG : J RREP ['N', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:42:05,933 : DEBUG : K RREP ['N', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:42:05,934 : DEBUG : L RREP ['N', 'L', 'K', 'J', 'I', 'F', 'G'] 
+2021-12-04 22:42:05,936 : DEBUG : M RREQ ['N', 'L', 'K', 'M'] G
+2021-12-04 22:42:05,937 : DEBUG : O RREQ ['N', 'L', 'O'] G
+2021-12-04 22:42:05,938 : DEBUG : P RREQ ['N', 'L', 'O', 'P'] G
+2021-12-04 22:42:05,938 : DEBUG : N DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,939 : DEBUG : M DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,939 : DEBUG : L DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,951 : DEBUG : K DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,957 : DEBUG : J DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,957 : DEBUG : I DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,957 : DEBUG : H DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,958 : DEBUG : G DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,958 : DEBUG : F DATA ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,964 : DEBUG : D DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,970 : DEBUG : F DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,970 : DEBUG : G DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,970 : DEBUG : H DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,970 : DEBUG : I DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,981 : DEBUG : J DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,981 : DEBUG : K DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:05,992 : DEBUG : L DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,005 : DEBUG : M DACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,034 : DEBUG : N SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,035 : DEBUG : M SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,045 : DEBUG : L SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,051 : DEBUG : K SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,063 : DEBUG : J SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,069 : DEBUG : I SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,070 : DEBUG : H SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,070 : DEBUG : G SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,075 : DEBUG : F SACK ['N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'D'] 
+2021-12-04 22:42:06,075 : INFO : D received data: Test data starting at N and ending at G
+2021-12-04 22:42:06,075 : INFO : Total hops: 29
+2021-12-04 22:42:07,038 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:42:07,039 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:07,192 : INFO : INITIALIZATION =============================================
+2021-12-04 22:48:07,193 : INFO : <class Node> RTT=3 s, recover_time=0.1 s, auto_recover=True
+2021-12-04 22:48:07,193 : INFO : <class Link> recover_time=0.1 s, auto_recover=True
+2021-12-04 22:48:07,193 : INFO : Number of nodes=16
+2021-12-04 22:48:07,193 : INFO : Number of links=21
+2021-12-04 22:48:07,193 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:07,193 : INFO : TEST START =================================================
+2021-12-04 22:48:07,193 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:48:07,193 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:07,194 : DEBUG : I RREQ ['I'] L
+2021-12-04 22:48:07,194 : DEBUG : F RREQ ['I', 'F'] L
+2021-12-04 22:48:07,194 : DEBUG : B RREQ ['I', 'F', 'B'] L
+2021-12-04 22:48:07,194 : DEBUG : A RREQ ['I', 'F', 'B', 'A'] L
+2021-12-04 22:48:07,195 : DEBUG : C RREQ ['I', 'F', 'B', 'C'] L
+2021-12-04 22:48:07,195 : DEBUG : D RREQ ['I', 'F', 'B', 'C', 'D'] L
+2021-12-04 22:48:07,195 : DEBUG : E RREQ ['I', 'F', 'B', 'C', 'D', 'E'] L
+2021-12-04 22:48:07,196 : DEBUG : H RREQ ['I', 'H'] L
+2021-12-04 22:48:11,805 : DEBUG : I RREQ ['I'] L
+2021-12-04 22:48:11,806 : DEBUG : J RREQ ['I', 'J'] L
+2021-12-04 22:48:11,807 : DEBUG : K RREQ ['I', 'J', 'K'] L
+2021-12-04 22:48:11,807 : DEBUG : L RREP ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,807 : DEBUG : K RREP ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,807 : DEBUG : J RREP ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,808 : DEBUG : M RREQ ['I', 'J', 'K', 'M'] L
+2021-12-04 22:48:11,808 : DEBUG : N RREQ ['I', 'J', 'K', 'M', 'N'] L
+2021-12-04 22:48:11,809 : DEBUG : O RREQ ['I', 'J', 'K', 'M', 'N', 'O'] L
+2021-12-04 22:48:11,810 : DEBUG : P RREQ ['I', 'J', 'K', 'M', 'N', 'O', 'P'] L
+2021-12-04 22:48:11,810 : DEBUG : I DATA ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,811 : DEBUG : J DATA ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,817 : DEBUG : K DATA ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,817 : DEBUG : L DACK ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,817 : DEBUG : K DACK ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,818 : DEBUG : J DACK ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,818 : DEBUG : I SACK ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,829 : DEBUG : J SACK ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,830 : DEBUG : K SACK ['I', 'J', 'K', 'L'] 
+2021-12-04 22:48:11,830 : INFO : L received data: Test data starting at I and ending at L
+2021-12-04 22:48:11,830 : INFO : Total hops: 9
+2021-12-04 22:48:12,835 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:48:12,835 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:12,837 : DEBUG : E RREQ ['E'] G
+2021-12-04 22:48:12,838 : DEBUG : D RREQ ['E', 'D'] G
+2021-12-04 22:48:12,838 : DEBUG : C RREQ ['E', 'D', 'C'] G
+2021-12-04 22:48:17,374 : DEBUG : E RREQ ['E'] G
+2021-12-04 22:48:22,743 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:48:22,743 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:22,744 : DEBUG : P DATA ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:22,745 : DEBUG : P DATA ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,350 : DEBUG : P RREQ ['P'] K
+2021-12-04 22:48:26,350 : DEBUG : L RREQ ['P', 'L'] K
+2021-12-04 22:48:26,350 : DEBUG : K RREP ['P', 'L', 'K'] 
+2021-12-04 22:48:26,351 : DEBUG : L RREP ['P', 'L', 'K'] 
+2021-12-04 22:48:26,351 : DEBUG : M RREQ ['P', 'L', 'M'] K
+2021-12-04 22:48:26,352 : DEBUG : N RREQ ['P', 'L', 'M', 'N'] K
+2021-12-04 22:48:26,352 : DEBUG : O RREQ ['P', 'L', 'M', 'N', 'O'] K
+2021-12-04 22:48:26,354 : DEBUG : P DATA ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,354 : DEBUG : O DATA ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,361 : DEBUG : N DATA ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,366 : DEBUG : M DATA ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,366 : DEBUG : K DACK ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,373 : DEBUG : M DACK ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,379 : DEBUG : N DACK ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,379 : DEBUG : O DACK ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,386 : DEBUG : P SACK ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,386 : DEBUG : O SACK ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,386 : DEBUG : N SACK ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,386 : DEBUG : M SACK ['P', 'O', 'N', 'M', 'K'] 
+2021-12-04 22:48:26,386 : INFO : K received data: Test data starting at P and ending at K
+2021-12-04 22:48:26,386 : INFO : Total hops: 14
+2021-12-04 22:48:27,387 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:48:27,388 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:27,388 : DEBUG : I RREQ ['I'] D
+2021-12-04 22:48:27,389 : DEBUG : F RREQ ['I', 'F'] D
+2021-12-04 22:48:27,389 : DEBUG : D RREP ['I', 'F', 'D'] 
+2021-12-04 22:48:27,389 : DEBUG : F RREP ['I', 'F', 'D'] 
+2021-12-04 22:48:27,390 : DEBUG : G RREQ ['I', 'F', 'G'] D
+2021-12-04 22:48:27,391 : DEBUG : H RREQ ['I', 'F', 'G', 'H'] D
+2021-12-04 22:48:27,395 : DEBUG : J RREQ ['I', 'J'] D
+2021-12-04 22:48:27,396 : DEBUG : K RREQ ['I', 'J', 'K'] D
+2021-12-04 22:48:27,397 : DEBUG : L RREQ ['I', 'J', 'K', 'L'] D
+2021-12-04 22:48:27,398 : DEBUG : M RREQ ['I', 'J', 'K', 'L', 'M'] D
+2021-12-04 22:48:27,398 : DEBUG : N RREQ ['I', 'J', 'K', 'L', 'M', 'N'] D
+2021-12-04 22:48:27,399 : DEBUG : O RREQ ['I', 'J', 'K', 'L', 'M', 'N', 'O'] D
+2021-12-04 22:48:27,401 : DEBUG : P RREQ ['I', 'J', 'K', 'L', 'M', 'N', 'O', 'P'] D
+2021-12-04 22:48:27,402 : DEBUG : I DATA ['I', 'F', 'D'] 
+2021-12-04 22:48:27,402 : DEBUG : F DATA ['I', 'F', 'D'] 
+2021-12-04 22:48:27,408 : DEBUG : D DACK ['I', 'F', 'D'] 
+2021-12-04 22:48:27,415 : DEBUG : F DACK ['I', 'F', 'D'] 
+2021-12-04 22:48:27,415 : DEBUG : I SACK ['I', 'F', 'D'] 
+2021-12-04 22:48:27,415 : DEBUG : F SACK ['I', 'F', 'D'] 
+2021-12-04 22:48:27,415 : INFO : D received data: Test data starting at I and ending at D
+2021-12-04 22:48:27,415 : INFO : Total hops: 6
+2021-12-04 22:48:28,419 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:48:28,420 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:28,422 : DEBUG : C RREQ ['C'] P
+2021-12-04 22:48:28,423 : DEBUG : B RREQ ['C', 'B'] P
+2021-12-04 22:48:28,423 : DEBUG : A RREQ ['C', 'B', 'A'] P
+2021-12-04 22:48:28,425 : DEBUG : D RREQ ['C', 'D'] P
+2021-12-04 22:48:32,679 : DEBUG : C RREQ ['C'] P
+2021-12-04 22:48:37,299 : DEBUG : C RREQ ['C'] P
+2021-12-04 22:48:42,747 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:48:42,748 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:42,748 : DEBUG : M RREQ ['M'] A
+2021-12-04 22:48:42,749 : DEBUG : K RREQ ['M', 'K'] A
+2021-12-04 22:48:42,749 : DEBUG : L RREQ ['M', 'K', 'L'] A
+2021-12-04 22:48:42,750 : DEBUG : N RREQ ['M', 'K', 'L', 'N'] A
+2021-12-04 22:48:42,751 : DEBUG : O RREQ ['M', 'K', 'L', 'N', 'O'] A
+2021-12-04 22:48:42,752 : DEBUG : P RREQ ['M', 'K', 'L', 'N', 'O', 'P'] A
+2021-12-04 22:48:46,869 : DEBUG : M RREQ ['M'] A
+2021-12-04 22:48:51,551 : DEBUG : M RREQ ['M'] A
+2021-12-04 22:48:56,434 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:48:56,435 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:56,435 : DEBUG : N RREQ ['N'] B
+2021-12-04 22:48:56,436 : DEBUG : L RREQ ['N', 'L'] B
+2021-12-04 22:48:56,436 : DEBUG : K RREQ ['N', 'L', 'K'] B
+2021-12-04 22:48:56,437 : DEBUG : J RREQ ['N', 'L', 'K', 'J'] B
+2021-12-04 22:48:56,437 : DEBUG : I RREQ ['N', 'L', 'K', 'J', 'I'] B
+2021-12-04 22:48:56,438 : DEBUG : F RREQ ['N', 'L', 'K', 'J', 'I', 'F'] B
+2021-12-04 22:48:56,438 : DEBUG : B RREP ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,439 : DEBUG : F RREP ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,440 : DEBUG : D RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'D'] B
+2021-12-04 22:48:56,440 : DEBUG : I RREP ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,440 : DEBUG : C RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'D', 'C'] B
+2021-12-04 22:48:56,441 : DEBUG : J RREP ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,442 : DEBUG : K RREP ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,442 : DEBUG : L RREP ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,443 : DEBUG : G RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'G'] B
+2021-12-04 22:48:56,444 : DEBUG : H RREQ ['N', 'L', 'K', 'J', 'I', 'F', 'G', 'H'] B
+2021-12-04 22:48:56,447 : DEBUG : M RREQ ['N', 'L', 'K', 'M'] B
+2021-12-04 22:48:56,449 : DEBUG : O RREQ ['N', 'L', 'O'] B
+2021-12-04 22:48:56,449 : DEBUG : P RREQ ['N', 'L', 'O', 'P'] B
+2021-12-04 22:48:56,451 : DEBUG : N DATA ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,451 : DEBUG : L DATA ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,451 : DEBUG : K DATA ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,452 : DEBUG : J DATA ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,470 : DEBUG : I DATA ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,476 : DEBUG : F DATA ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,476 : DEBUG : B DACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,476 : DEBUG : F DACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,487 : DEBUG : I DACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,499 : DEBUG : J DACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,512 : DEBUG : K DACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,522 : DEBUG : L DACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,552 : DEBUG : N SACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,552 : DEBUG : L SACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,552 : DEBUG : K SACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,562 : DEBUG : J SACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,568 : DEBUG : I SACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,568 : DEBUG : F SACK ['N', 'L', 'K', 'J', 'I', 'F', 'B'] 
+2021-12-04 22:48:56,580 : INFO : B received data: Test data starting at N and ending at B
+2021-12-04 22:48:56,580 : INFO : Total hops: 18
+2021-12-04 22:48:57,556 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:48:57,556 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:48:57,558 : DEBUG : E RREQ ['E'] J
+2021-12-04 22:48:57,558 : DEBUG : D RREQ ['E', 'D'] J
+2021-12-04 22:49:06,022 : INFO : INITIALIZATION =============================================
+2021-12-04 22:49:06,023 : INFO : <class Node> RTT=3 s, recover_time=0.1 s, auto_recover=True
+2021-12-04 22:49:06,023 : INFO : <class Link> recover_time=0.1 s, auto_recover=True
+2021-12-04 22:49:06,023 : INFO : Number of nodes=16
+2021-12-04 22:49:06,023 : INFO : Number of links=21
+2021-12-04 22:49:06,023 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:06,023 : INFO : TEST START =================================================
+2021-12-04 22:49:06,023 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:06,023 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:06,024 : DEBUG : L RREQ ['L'] K
+2021-12-04 22:49:06,024 : DEBUG : K RREP ['L', 'K'] 
+2021-12-04 22:49:06,024 : DEBUG : M RREQ ['L', 'M'] K
+2021-12-04 22:49:06,025 : DEBUG : N RREQ ['L', 'M', 'N'] K
+2021-12-04 22:49:06,025 : DEBUG : O RREQ ['L', 'M', 'N', 'O'] K
+2021-12-04 22:49:06,025 : DEBUG : P RREQ ['L', 'M', 'N', 'O', 'P'] K
+2021-12-04 22:49:06,026 : DEBUG : L DATA ['L', 'K'] 
+2021-12-04 22:49:06,026 : DEBUG : K DACK ['L', 'K'] 
+2021-12-04 22:49:06,032 : DEBUG : L SACK ['L', 'K'] 
+2021-12-04 22:49:06,032 : INFO : K received data: Test data starting at L and ending at K
+2021-12-04 22:49:06,032 : INFO : Total hops: 3
+2021-12-04 22:49:07,037 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:07,037 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:07,038 : DEBUG : A RREQ ['A'] C
+2021-12-04 22:49:12,805 : DEBUG : A RREQ ['A'] C
+2021-12-04 22:49:12,806 : DEBUG : B RREQ ['A', 'B'] C
+2021-12-04 22:49:12,806 : DEBUG : C RREP ['A', 'B', 'C'] 
+2021-12-04 22:49:12,807 : DEBUG : B RREP ['A', 'B', 'C'] 
+2021-12-04 22:49:12,807 : DEBUG : F RREQ ['A', 'B', 'F'] C
+2021-12-04 22:49:12,808 : DEBUG : D RREQ ['A', 'B', 'F', 'D'] C
+2021-12-04 22:49:12,809 : DEBUG : E RREQ ['A', 'B', 'F', 'D', 'E'] C
+2021-12-04 22:49:12,810 : DEBUG : G RREQ ['A', 'B', 'F', 'G'] C
+2021-12-04 22:49:12,810 : DEBUG : H RREQ ['A', 'B', 'F', 'G', 'H'] C
+2021-12-04 22:49:12,811 : DEBUG : I RREQ ['A', 'B', 'F', 'G', 'H', 'I'] C
+2021-12-04 22:49:12,812 : DEBUG : J RREQ ['A', 'B', 'F', 'G', 'H', 'I', 'J'] C
+2021-12-04 22:49:12,812 : DEBUG : K RREQ ['A', 'B', 'F', 'G', 'H', 'I', 'J', 'K'] C
+2021-12-04 22:49:12,813 : DEBUG : L RREQ ['A', 'B', 'F', 'G', 'H', 'I', 'J', 'K', 'L'] C
+2021-12-04 22:49:12,813 : DEBUG : M RREQ ['A', 'B', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M'] C
+2021-12-04 22:49:12,815 : DEBUG : N RREQ ['A', 'B', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'] C
+2021-12-04 22:49:12,816 : DEBUG : O RREQ ['A', 'B', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] C
+2021-12-04 22:49:12,816 : DEBUG : P RREQ ['A', 'B', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P'] C
+2021-12-04 22:49:12,818 : DEBUG : A DATA ['A', 'B', 'C'] 
+2021-12-04 22:49:12,819 : DEBUG : B DATA ['A', 'B', 'C'] 
+2021-12-04 22:49:12,819 : DEBUG : C DACK ['A', 'B', 'C'] 
+2021-12-04 22:49:12,831 : DEBUG : B DACK ['A', 'B', 'C'] 
+2021-12-04 22:49:12,831 : DEBUG : A SACK ['A', 'B', 'C'] 
+2021-12-04 22:49:12,836 : DEBUG : B SACK ['A', 'B', 'C'] 
+2021-12-04 22:49:12,842 : INFO : C received data: Test data starting at A and ending at C
+2021-12-04 22:49:12,842 : INFO : Total hops: 6
+2021-12-04 22:49:13,846 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:13,847 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:13,847 : DEBUG : E DATA ['E', 'D', 'F'] 
+2021-12-04 22:49:13,848 : DEBUG : D DATA ['E', 'D', 'F'] 
+2021-12-04 22:49:13,848 : DEBUG : F DACK ['E', 'D', 'F'] 
+2021-12-04 22:49:13,855 : DEBUG : D DACK ['E', 'D', 'F'] 
+2021-12-04 22:49:13,885 : DEBUG : E SACK ['E', 'D', 'F'] 
+2021-12-04 22:49:13,886 : DEBUG : D SACK ['E', 'D', 'F'] 
+2021-12-04 22:49:13,886 : INFO : F received data: Test data starting at E and ending at F
+2021-12-04 22:49:13,886 : INFO : Total hops: 6
+2021-12-04 22:49:14,890 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:14,890 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:14,891 : DEBUG : H RREQ ['H'] J
+2021-12-04 22:49:14,891 : DEBUG : G RREQ ['H', 'G'] J
+2021-12-04 22:49:14,892 : DEBUG : F RREQ ['H', 'G', 'F'] J
+2021-12-04 22:49:14,892 : DEBUG : B RREQ ['H', 'G', 'F', 'B'] J
+2021-12-04 22:49:14,892 : DEBUG : A RREQ ['H', 'G', 'F', 'B', 'A'] J
+2021-12-04 22:49:14,893 : DEBUG : C RREQ ['H', 'G', 'F', 'B', 'C'] J
+2021-12-04 22:49:14,893 : DEBUG : D RREQ ['H', 'G', 'F', 'B', 'C', 'D'] J
+2021-12-04 22:49:14,894 : DEBUG : E RREQ ['H', 'G', 'F', 'B', 'C', 'D', 'E'] J
+2021-12-04 22:49:14,895 : DEBUG : I RREQ ['H', 'G', 'F', 'I'] J
+2021-12-04 22:49:14,896 : DEBUG : J RREP ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,896 : DEBUG : I RREP ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,897 : DEBUG : F RREP ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,908 : DEBUG : G RREP ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,920 : DEBUG : H DATA ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,921 : DEBUG : G DATA ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,921 : DEBUG : F DATA ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,921 : DEBUG : I DATA ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,921 : DEBUG : J DACK ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,921 : DEBUG : I DACK ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,947 : DEBUG : F DACK ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,947 : DEBUG : G DACK ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,959 : DEBUG : H SACK ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,965 : DEBUG : G SACK ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,965 : DEBUG : F SACK ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,965 : DEBUG : I SACK ['H', 'G', 'F', 'I', 'J'] 
+2021-12-04 22:49:14,972 : INFO : J received data: Test data starting at H and ending at J
+2021-12-04 22:49:14,972 : INFO : Total hops: 12
+2021-12-04 22:49:15,974 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:15,974 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:15,976 : DEBUG : A RREQ ['A'] N
+2021-12-04 22:49:15,976 : DEBUG : B RREQ ['A', 'B'] N
+2021-12-04 22:49:15,977 : DEBUG : C RREQ ['A', 'B', 'C'] N
+2021-12-04 22:49:15,978 : DEBUG : F RREQ ['A', 'B', 'F'] N
+2021-12-04 22:49:15,978 : DEBUG : G RREQ ['A', 'B', 'F', 'G'] N
+2021-12-04 22:49:15,979 : DEBUG : H RREQ ['A', 'B', 'F', 'G', 'H'] N
+2021-12-04 22:49:20,078 : DEBUG : A RREQ ['A'] N
+2021-12-04 22:49:25,159 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:25,159 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:25,161 : DEBUG : J DATA ['J', 'I', 'H'] 
+2021-12-04 22:49:25,162 : DEBUG : J DATA ['J', 'I', 'H'] 
+2021-12-04 22:49:27,268 : DEBUG : J RREQ ['J'] H
+2021-12-04 22:49:27,268 : DEBUG : I RREQ ['J', 'I'] H
+2021-12-04 22:49:27,269 : DEBUG : F RREQ ['J', 'I', 'F'] H
+2021-12-04 22:49:27,269 : DEBUG : B RREQ ['J', 'I', 'F', 'B'] H
+2021-12-04 22:49:27,269 : DEBUG : A RREQ ['J', 'I', 'F', 'B', 'A'] H
+2021-12-04 22:49:27,270 : DEBUG : C RREQ ['J', 'I', 'F', 'B', 'C'] H
+2021-12-04 22:49:27,270 : DEBUG : D RREQ ['J', 'I', 'F', 'B', 'C', 'D'] H
+2021-12-04 22:49:27,271 : DEBUG : E RREQ ['J', 'I', 'F', 'B', 'C', 'D', 'E'] H
+2021-12-04 22:49:27,272 : DEBUG : G RREQ ['J', 'I', 'F', 'G'] H
+2021-12-04 22:49:27,272 : DEBUG : H RREP ['J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:49:27,273 : DEBUG : G RREP ['J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:49:27,273 : DEBUG : F RREP ['J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:49:27,273 : DEBUG : I RREP ['J', 'I', 'F', 'G', 'H'] 
+2021-12-04 22:49:27,274 : DEBUG : K RREQ ['J', 'K'] H
+2021-12-04 22:49:27,274 : DEBUG : L RREQ ['J', 'K', 'L'] H
+2021-12-04 22:49:27,275 : DEBUG : M RREQ ['J', 'K', 'L', 'M'] H
+2021-12-04 22:49:27,275 : DEBUG : N RREQ ['J', 'K', 'L', 'M', 'N'] H
+2021-12-04 22:49:27,276 : DEBUG : O RREQ ['J', 'K', 'L', 'M', 'N', 'O'] H
+2021-12-04 22:49:27,276 : DEBUG : P RREQ ['J', 'K', 'L', 'M', 'N', 'O', 'P'] H
+2021-12-04 22:49:27,277 : DEBUG : J DATA ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,277 : DEBUG : I DATA ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,278 : DEBUG : H DATA ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,284 : DEBUG : G DATA ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,285 : DEBUG : F DACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,285 : DEBUG : G DACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,302 : DEBUG : H DACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,302 : DEBUG : I DACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,307 : DEBUG : J SACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,320 : DEBUG : I SACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,320 : DEBUG : H SACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,320 : DEBUG : G SACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:27,333 : INFO : F received data: Test data starting at J and ending at H
+2021-12-04 22:49:27,333 : INFO : Total hops: 14
+2021-12-04 22:49:28,323 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:28,323 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:28,324 : DEBUG : N RREQ ['N'] E
+2021-12-04 22:49:28,324 : DEBUG : L RREQ ['N', 'L'] E
+2021-12-04 22:49:28,324 : DEBUG : M RREQ ['N', 'L', 'M'] E
+2021-12-04 22:49:32,768 : DEBUG : N RREQ ['N'] E
+2021-12-04 22:49:32,769 : DEBUG : O RREQ ['N', 'O'] E
+2021-12-04 22:49:32,770 : DEBUG : P RREQ ['N', 'O', 'P'] E
+2021-12-04 22:49:38,669 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:38,670 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:38,671 : DEBUG : I RREQ ['I'] M
+2021-12-04 22:49:38,672 : DEBUG : F RREQ ['I', 'F'] M
+2021-12-04 22:49:38,672 : DEBUG : B RREQ ['I', 'F', 'B'] M
+2021-12-04 22:49:38,673 : DEBUG : A RREQ ['I', 'F', 'B', 'A'] M
+2021-12-04 22:49:38,673 : DEBUG : C RREQ ['I', 'F', 'B', 'C'] M
+2021-12-04 22:49:38,674 : DEBUG : D RREQ ['I', 'F', 'B', 'C', 'D'] M
+2021-12-04 22:49:38,676 : DEBUG : G RREQ ['I', 'F', 'G'] M
+2021-12-04 22:49:38,676 : DEBUG : H RREQ ['I', 'F', 'G', 'H'] M
+2021-12-04 22:49:42,694 : DEBUG : I RREQ ['I'] M
+2021-12-04 22:49:42,694 : DEBUG : J RREQ ['I', 'J'] M
+2021-12-04 22:49:42,695 : DEBUG : K RREQ ['I', 'J', 'K'] M
+2021-12-04 22:49:42,696 : DEBUG : L RREQ ['I', 'J', 'K', 'L'] M
+2021-12-04 22:49:42,696 : DEBUG : M RREP ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,696 : DEBUG : L RREP ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,697 : DEBUG : K RREP ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,697 : DEBUG : J RREP ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,697 : DEBUG : N RREQ ['I', 'J', 'K', 'L', 'N'] M
+2021-12-04 22:49:42,698 : DEBUG : O RREQ ['I', 'J', 'K', 'L', 'N', 'O'] M
+2021-12-04 22:49:42,699 : DEBUG : P RREQ ['I', 'J', 'K', 'L', 'N', 'O', 'P'] M
+2021-12-04 22:49:42,700 : DEBUG : I DATA ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,701 : DEBUG : J DATA ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,701 : DEBUG : K DATA ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,702 : DEBUG : L DATA ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,708 : DEBUG : M DACK ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,708 : DEBUG : L DACK ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,708 : DEBUG : K DACK ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,709 : DEBUG : J DACK ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,709 : DEBUG : I SACK ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,715 : DEBUG : J SACK ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,715 : DEBUG : K SACK ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,715 : DEBUG : L SACK ['I', 'J', 'K', 'L', 'M'] 
+2021-12-04 22:49:42,728 : INFO : M received data: Test data starting at I and ending at M
+2021-12-04 22:49:42,728 : INFO : Total hops: 12
+2021-12-04 22:49:43,727 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:43,727 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:43,727 : DEBUG : J DATA ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,728 : DEBUG : I DATA ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,728 : DEBUG : H DATA ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,728 : DEBUG : G DATA ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,728 : DEBUG : F DACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,728 : DEBUG : G DACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,729 : DEBUG : H DACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,729 : DEBUG : I DACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,729 : DEBUG : J SACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,735 : DEBUG : I SACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,736 : DEBUG : H SACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,736 : DEBUG : G SACK ['J', 'I', 'H', 'G', 'F'] 
+2021-12-04 22:49:43,748 : INFO : F received data: Test data starting at J and ending at I
+2021-12-04 22:49:43,748 : INFO : Total hops: 12
+2021-12-04 22:49:44,752 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:44,752 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:49:44,754 : DEBUG : G RREQ ['G'] C
+2021-12-04 22:49:44,757 : DEBUG : F RREQ ['G', 'F'] C
+2021-12-04 22:49:44,757 : DEBUG : B RREQ ['G', 'F', 'B'] C
+2021-12-04 22:49:44,758 : DEBUG : A RREQ ['G', 'F', 'B', 'A'] C
+2021-12-04 22:49:44,759 : DEBUG : C RREP ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,759 : DEBUG : B RREP ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,759 : DEBUG : F RREP ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,760 : DEBUG : D RREQ ['G', 'F', 'D'] C
+2021-12-04 22:49:44,761 : DEBUG : E RREQ ['G', 'F', 'D', 'E'] C
+2021-12-04 22:49:44,762 : DEBUG : I RREQ ['G', 'F', 'I'] C
+2021-12-04 22:49:44,763 : DEBUG : J RREQ ['G', 'F', 'I', 'J'] C
+2021-12-04 22:49:44,765 : DEBUG : G DATA ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,765 : DEBUG : F DATA ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,766 : DEBUG : B DATA ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,766 : DEBUG : C DACK ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,766 : DEBUG : B DACK ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,766 : DEBUG : F DACK ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,796 : DEBUG : G SACK ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,796 : DEBUG : F SACK ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,796 : DEBUG : B SACK ['G', 'F', 'B', 'C'] 
+2021-12-04 22:49:44,796 : INFO : C received data: Test data starting at G and ending at C
+2021-12-04 22:49:44,797 : INFO : Total hops: 9
+2021-12-04 22:49:45,798 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:49:45,799 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:50:58,065 : INFO : INITIALIZATION =============================================
+2021-12-04 22:50:58,066 : INFO : <class Node> RTT=3 s, recover_time=0.1 s, auto_recover=True
+2021-12-04 22:50:58,066 : INFO : <class Link> recover_time=0.1 s, auto_recover=True
+2021-12-04 22:50:58,067 : INFO : Number of nodes=16
+2021-12-04 22:50:58,067 : INFO : Number of links=21
+2021-12-04 22:50:58,067 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:50:58,067 : INFO : TEST START =================================================
+2021-12-04 22:50:58,067 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:50:58,067 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:50:58,068 : DEBUG : L RREQ ['L'] H
+2021-12-04 22:50:58,068 : DEBUG : K RREQ ['L', 'K'] H
+2021-12-04 22:50:58,068 : DEBUG : J RREQ ['L', 'K', 'J'] H
+2021-12-04 22:50:58,069 : DEBUG : M RREQ ['L', 'K', 'M'] H
+2021-12-04 22:50:58,069 : DEBUG : N RREQ ['L', 'K', 'M', 'N'] H
+2021-12-04 22:50:58,070 : DEBUG : O RREQ ['L', 'K', 'M', 'N', 'O'] H
+2021-12-04 22:50:58,070 : DEBUG : P RREQ ['L', 'K', 'M', 'N', 'O', 'P'] H
+2021-12-04 22:51:01,986 : DEBUG : L RREQ ['L'] H
+2021-12-04 22:51:07,051 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:07,052 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:07,052 : DEBUG : C RREQ ['C'] F
+2021-12-04 22:51:07,053 : DEBUG : B RREQ ['C', 'B'] F
+2021-12-04 22:51:07,054 : DEBUG : A RREQ ['C', 'B', 'A'] F
+2021-12-04 22:51:07,055 : DEBUG : F RREP ['C', 'B', 'F'] 
+2021-12-04 22:51:07,055 : DEBUG : B RREP ['C', 'B', 'F'] 
+2021-12-04 22:51:07,056 : DEBUG : D RREQ ['C', 'D'] F
+2021-12-04 22:51:07,057 : DEBUG : E RREQ ['C', 'D', 'E'] F
+2021-12-04 22:51:07,058 : DEBUG : C DATA ['C', 'B', 'F'] 
+2021-12-04 22:51:07,059 : DEBUG : B DATA ['C', 'B', 'F'] 
+2021-12-04 22:51:07,059 : DEBUG : F DACK ['C', 'B', 'F'] 
+2021-12-04 22:51:07,071 : DEBUG : B DACK ['C', 'B', 'F'] 
+2021-12-04 22:51:07,095 : DEBUG : C SACK ['C', 'B', 'F'] 
+2021-12-04 22:51:07,095 : DEBUG : B SACK ['C', 'B', 'F'] 
+2021-12-04 22:51:07,095 : INFO : F received data: Test data starting at C and ending at F
+2021-12-04 22:51:07,095 : INFO : Total hops: 6
+2021-12-04 22:51:08,097 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:08,098 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:08,099 : DEBUG : M RREQ ['M'] D
+2021-12-04 22:51:08,100 : DEBUG : K RREQ ['M', 'K'] D
+2021-12-04 22:51:08,100 : DEBUG : J RREQ ['M', 'K', 'J'] D
+2021-12-04 22:51:08,101 : DEBUG : I RREQ ['M', 'K', 'J', 'I'] D
+2021-12-04 22:51:08,102 : DEBUG : L RREQ ['M', 'K', 'L'] D
+2021-12-04 22:51:08,103 : DEBUG : O RREQ ['M', 'K', 'L', 'O'] D
+2021-12-04 22:51:08,104 : DEBUG : P RREQ ['M', 'K', 'L', 'O', 'P'] D
+2021-12-04 22:51:12,413 : DEBUG : M RREQ ['M'] D
+2021-12-04 22:51:12,414 : DEBUG : N RREQ ['M', 'N'] D
+2021-12-04 22:51:18,106 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:18,106 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:18,106 : DEBUG : F DATA ['F', 'D'] 
+2021-12-04 22:51:18,107 : DEBUG : D DACK ['F', 'D'] 
+2021-12-04 22:51:18,119 : DEBUG : F SACK ['F', 'D'] 
+2021-12-04 22:51:18,125 : INFO : D received data: Test data starting at F and ending at D
+2021-12-04 22:51:18,125 : INFO : Total hops: 3
+2021-12-04 22:51:19,130 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:19,130 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:19,131 : DEBUG : I DATA ['I', 'J', 'K'] 
+2021-12-04 22:51:19,132 : DEBUG : J DATA ['I', 'J', 'K'] 
+2021-12-04 22:51:19,151 : DEBUG : K DACK ['I', 'J', 'K'] 
+2021-12-04 22:51:19,163 : DEBUG : J DACK ['I', 'J', 'K'] 
+2021-12-04 22:51:19,186 : DEBUG : I SACK ['I', 'J', 'K'] 
+2021-12-04 22:51:19,192 : DEBUG : J SACK ['I', 'J', 'K'] 
+2021-12-04 22:51:19,215 : INFO : K received data: Test data starting at I and ending at K
+2021-12-04 22:51:19,215 : INFO : Total hops: 6
+2021-12-04 22:51:20,203 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:20,203 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:20,204 : DEBUG : P DATA ['P', 'O', 'N'] 
+2021-12-04 22:51:20,204 : DEBUG : O DATA ['P', 'O', 'N'] 
+2021-12-04 22:51:20,204 : DEBUG : N DACK ['P', 'O', 'N'] 
+2021-12-04 22:51:20,205 : DEBUG : O DACK ['P', 'O', 'N'] 
+2021-12-04 22:51:20,205 : DEBUG : P SACK ['P', 'O', 'N'] 
+2021-12-04 22:51:20,206 : DEBUG : O SACK ['P', 'O', 'N'] 
+2021-12-04 22:51:20,218 : INFO : N received data: Test data starting at P and ending at N
+2021-12-04 22:51:20,218 : INFO : Total hops: 6
+2021-12-04 22:51:21,215 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:21,215 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:21,217 : DEBUG : J RREQ ['J'] A
+2021-12-04 22:51:21,218 : DEBUG : I RREQ ['J', 'I'] A
+2021-12-04 22:51:21,219 : DEBUG : F RREQ ['J', 'I', 'F'] A
+2021-12-04 22:51:21,219 : DEBUG : D RREQ ['J', 'I', 'F', 'D'] A
+2021-12-04 22:51:21,220 : DEBUG : C RREQ ['J', 'I', 'F', 'D', 'C'] A
+2021-12-04 22:51:21,220 : DEBUG : E RREQ ['J', 'I', 'F', 'D', 'E'] A
+2021-12-04 22:51:21,222 : DEBUG : H RREQ ['J', 'I', 'H'] A
+2021-12-04 22:51:21,223 : DEBUG : K RREQ ['J', 'K'] A
+2021-12-04 22:51:21,224 : DEBUG : L RREQ ['J', 'K', 'L'] A
+2021-12-04 22:51:21,224 : DEBUG : O RREQ ['J', 'K', 'L', 'O'] A
+2021-12-04 22:51:21,225 : DEBUG : P RREQ ['J', 'K', 'L', 'O', 'P'] A
+2021-12-04 22:51:25,695 : DEBUG : J RREQ ['J'] A
+2021-12-04 22:51:31,467 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:31,467 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:31,468 : DEBUG : F DATA ['F', 'B'] 
+2021-12-04 22:51:31,469 : DEBUG : B DACK ['F', 'B'] 
+2021-12-04 22:51:31,475 : DEBUG : F SACK ['F', 'B'] 
+2021-12-04 22:51:31,491 : INFO : B received data: Test data starting at F and ending at B
+2021-12-04 22:51:31,492 : INFO : Total hops: 3
+2021-12-04 22:51:32,496 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:32,496 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:32,498 : DEBUG : J RREQ ['J'] P
+2021-12-04 22:51:32,499 : DEBUG : I RREQ ['J', 'I'] P
+2021-12-04 22:51:32,499 : DEBUG : H RREQ ['J', 'I', 'H'] P
+2021-12-04 22:51:32,500 : DEBUG : G RREQ ['J', 'I', 'H', 'G'] P
+2021-12-04 22:51:32,501 : DEBUG : K RREQ ['J', 'K'] P
+2021-12-04 22:51:37,272 : DEBUG : J RREQ ['J'] P
+2021-12-04 22:51:42,945 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:42,945 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:51:42,947 : DEBUG : K RREQ ['K'] N
+2021-12-04 22:51:42,947 : DEBUG : L RREQ ['K', 'L'] N
+2021-12-04 22:51:42,948 : DEBUG : N RREP ['K', 'L', 'N'] 
+2021-12-04 22:51:42,948 : DEBUG : L RREP ['K', 'L', 'N'] 
+2021-12-04 22:51:42,949 : DEBUG : K DATA ['K', 'L', 'N'] 
+2021-12-04 22:51:42,949 : DEBUG : L DATA ['K', 'L', 'N'] 
+2021-12-04 22:51:42,950 : DEBUG : N DACK ['K', 'L', 'N'] 
+2021-12-04 22:51:42,962 : DEBUG : L DACK ['K', 'L', 'N'] 
+2021-12-04 22:51:42,962 : DEBUG : K SACK ['K', 'L', 'N'] 
+2021-12-04 22:51:42,962 : DEBUG : L SACK ['K', 'L', 'N'] 
+2021-12-04 22:51:42,963 : INFO : N received data: Test data starting at K and ending at N
+2021-12-04 22:51:42,963 : INFO : Total hops: 6
+2021-12-04 22:51:43,967 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:51:43,967 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:18,652 : INFO : INITIALIZATION =============================================
+2021-12-04 22:52:18,653 : INFO : <class Node> RTT=3 s, recover_time=0.1 s, auto_recover=True
+2021-12-04 22:52:18,653 : INFO : <class Link> recover_time=0.1 s, auto_recover=True
+2021-12-04 22:52:18,653 : INFO : Number of nodes=16
+2021-12-04 22:52:18,653 : INFO : Number of links=21
+2021-12-04 22:52:18,653 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:18,653 : INFO : TEST START =================================================
+2021-12-04 22:52:18,654 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:18,654 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:18,654 : DEBUG : D RREQ ['D'] A
+2021-12-04 22:52:18,655 : DEBUG : C RREQ ['D', 'C'] A
+2021-12-04 22:52:18,655 : DEBUG : B RREQ ['D', 'C', 'B'] A
+2021-12-04 22:52:18,655 : DEBUG : A RREP ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,655 : DEBUG : B RREP ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,655 : DEBUG : C RREP ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,656 : DEBUG : E RREQ ['D', 'E'] A
+2021-12-04 22:52:18,656 : DEBUG : D DATA ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,657 : DEBUG : C DATA ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,657 : DEBUG : B DATA ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,669 : DEBUG : A DACK ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,675 : DEBUG : B DACK ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,676 : DEBUG : C DACK ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,700 : DEBUG : D SACK ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,700 : DEBUG : C SACK ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,700 : DEBUG : B SACK ['D', 'C', 'B', 'A'] 
+2021-12-04 22:52:18,700 : INFO : A received data: Test data starting at D and ending at A
+2021-12-04 22:52:18,700 : INFO : Total hops: 9
+2021-12-04 22:52:19,703 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:19,704 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:19,705 : DEBUG : K RREQ ['K'] M
+2021-12-04 22:52:19,705 : DEBUG : J RREQ ['K', 'J'] M
+2021-12-04 22:52:19,705 : DEBUG : I RREQ ['K', 'J', 'I'] M
+2021-12-04 22:52:19,706 : DEBUG : F RREQ ['K', 'J', 'I', 'F'] M
+2021-12-04 22:52:19,706 : DEBUG : D RREQ ['K', 'J', 'I', 'F', 'D'] M
+2021-12-04 22:52:19,707 : DEBUG : H RREQ ['K', 'J', 'I', 'H'] M
+2021-12-04 22:52:19,708 : DEBUG : M RREP ['K', 'M'] 
+2021-12-04 22:52:19,709 : DEBUG : K DATA ['K', 'M'] 
+2021-12-04 22:52:19,709 : DEBUG : M DACK ['K', 'M'] 
+2021-12-04 22:52:19,714 : DEBUG : K SACK ['K', 'M'] 
+2021-12-04 22:52:19,715 : INFO : M received data: Test data starting at K and ending at M
+2021-12-04 22:52:19,715 : INFO : Total hops: 3
+2021-12-04 22:52:20,718 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:20,718 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:20,720 : DEBUG : J DATA ['J', 'K'] 
+2021-12-04 22:52:20,720 : DEBUG : K DACK ['J', 'K'] 
+2021-12-04 22:52:20,721 : DEBUG : J SACK ['J', 'K'] 
+2021-12-04 22:52:20,728 : INFO : K received data: Test data starting at J and ending at K
+2021-12-04 22:52:20,728 : INFO : Total hops: 3
+2021-12-04 22:52:21,728 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:21,729 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:21,730 : DEBUG : F RREQ ['F'] L
+2021-12-04 22:52:21,730 : DEBUG : B RREQ ['F', 'B'] L
+2021-12-04 22:52:21,730 : DEBUG : A RREQ ['F', 'B', 'A'] L
+2021-12-04 22:52:21,731 : DEBUG : D RREQ ['F', 'D'] L
+2021-12-04 22:52:21,732 : DEBUG : E RREQ ['F', 'D', 'E'] L
+2021-12-04 22:52:25,564 : DEBUG : F RREQ ['F'] L
+2021-12-04 22:52:25,565 : DEBUG : G RREQ ['F', 'G'] L
+2021-12-04 22:52:25,566 : DEBUG : H RREQ ['F', 'G', 'H'] L
+2021-12-04 22:52:25,566 : DEBUG : I RREQ ['F', 'G', 'H', 'I'] L
+2021-12-04 22:52:25,567 : DEBUG : J RREQ ['F', 'G', 'H', 'I', 'J'] L
+2021-12-04 22:52:25,567 : DEBUG : K RREQ ['F', 'G', 'H', 'I', 'J', 'K'] L
+2021-12-04 22:52:25,568 : DEBUG : L RREP ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,568 : DEBUG : K RREP ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,569 : DEBUG : J RREP ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,569 : DEBUG : M RREQ ['F', 'G', 'H', 'I', 'J', 'K', 'M'] L
+2021-12-04 22:52:25,569 : DEBUG : I RREP ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,570 : DEBUG : H RREP ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,570 : DEBUG : N RREQ ['F', 'G', 'H', 'I', 'J', 'K', 'M', 'N'] L
+2021-12-04 22:52:25,570 : DEBUG : G RREP ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,571 : DEBUG : O RREQ ['F', 'G', 'H', 'I', 'J', 'K', 'M', 'N', 'O'] L
+2021-12-04 22:52:25,572 : DEBUG : P RREQ ['F', 'G', 'H', 'I', 'J', 'K', 'M', 'N', 'O', 'P'] L
+2021-12-04 22:52:25,573 : DEBUG : F DATA ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,573 : DEBUG : G DATA ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,574 : DEBUG : H DATA ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,586 : DEBUG : I DATA ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,592 : DEBUG : J DATA ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,592 : DEBUG : K DATA ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,592 : DEBUG : L DACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,592 : DEBUG : K DACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,592 : DEBUG : J DACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,598 : DEBUG : I DACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,598 : DEBUG : H DACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,599 : DEBUG : G DACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,599 : DEBUG : F SACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,599 : DEBUG : G SACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,599 : DEBUG : H SACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,599 : DEBUG : I SACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,599 : DEBUG : J SACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,624 : DEBUG : K SACK ['F', 'G', 'H', 'I', 'J', 'K', 'L'] 
+2021-12-04 22:52:25,624 : INFO : L received data: Test data starting at F and ending at L
+2021-12-04 22:52:25,625 : INFO : Total hops: 18
+2021-12-04 22:52:26,616 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:26,616 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:26,617 : DEBUG : A DATA ['A', 'B', 'F'] 
+2021-12-04 22:52:26,617 : DEBUG : A DATA ['A', 'B', 'F'] 
+2021-12-04 22:52:28,875 : DEBUG : A RREQ ['A'] F
+2021-12-04 22:52:28,876 : DEBUG : B RREQ ['A', 'B'] F
+2021-12-04 22:52:28,877 : DEBUG : C RREQ ['A', 'B', 'C'] F
+2021-12-04 22:52:28,877 : DEBUG : D RREQ ['A', 'B', 'C', 'D'] F
+2021-12-04 22:52:28,878 : DEBUG : E RREQ ['A', 'B', 'C', 'D', 'E'] F
+2021-12-04 22:52:28,879 : DEBUG : F RREP ['A', 'B', 'C', 'D', 'F'] 
+2021-12-04 22:52:28,879 : DEBUG : D RREP ['A', 'B', 'C', 'D', 'F'] 
+2021-12-04 22:52:28,879 : DEBUG : C RREP ['A', 'B', 'C', 'D', 'F'] 
+2021-12-04 22:52:28,880 : DEBUG : B RREP ['A', 'B', 'C', 'D', 'F'] 
+2021-12-04 22:52:28,881 : DEBUG : A DATA ['A', 'B', 'F'] 
+2021-12-04 22:52:28,881 : DEBUG : B DATA ['A', 'B', 'F'] 
+2021-12-04 22:52:28,882 : DEBUG : F DACK ['A', 'B', 'F'] 
+2021-12-04 22:52:28,888 : DEBUG : B DACK ['A', 'B', 'F'] 
+2021-12-04 22:52:28,900 : DEBUG : A SACK ['A', 'B', 'F'] 
+2021-12-04 22:52:28,906 : DEBUG : B SACK ['A', 'B', 'F'] 
+2021-12-04 22:52:28,906 : INFO : F received data: Test data starting at A and ending at F
+2021-12-04 22:52:28,906 : INFO : Total hops: 8
+2021-12-04 22:52:29,911 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:29,911 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:29,911 : DEBUG : B RREQ ['B'] G
+2021-12-04 22:52:29,912 : DEBUG : A RREQ ['B', 'A'] G
+2021-12-04 22:52:29,912 : DEBUG : C RREQ ['B', 'C'] G
+2021-12-04 22:52:34,070 : DEBUG : B RREQ ['B'] G
+2021-12-04 22:52:34,071 : DEBUG : F RREQ ['B', 'F'] G
+2021-12-04 22:52:34,072 : DEBUG : D RREQ ['B', 'F', 'D'] G
+2021-12-04 22:52:34,073 : DEBUG : E RREQ ['B', 'F', 'D', 'E'] G
+2021-12-04 22:52:34,074 : DEBUG : G RREP ['B', 'F', 'G'] 
+2021-12-04 22:52:34,075 : DEBUG : F RREP ['B', 'F', 'G'] 
+2021-12-04 22:52:34,076 : DEBUG : I RREQ ['B', 'F', 'I'] G
+2021-12-04 22:52:34,076 : DEBUG : H RREQ ['B', 'F', 'I', 'H'] G
+2021-12-04 22:52:34,077 : DEBUG : J RREQ ['B', 'F', 'I', 'J'] G
+2021-12-04 22:52:34,078 : DEBUG : K RREQ ['B', 'F', 'I', 'J', 'K'] G
+2021-12-04 22:52:34,079 : DEBUG : L RREQ ['B', 'F', 'I', 'J', 'K', 'L'] G
+2021-12-04 22:52:34,079 : DEBUG : M RREQ ['B', 'F', 'I', 'J', 'K', 'L', 'M'] G
+2021-12-04 22:52:34,080 : DEBUG : N RREQ ['B', 'F', 'I', 'J', 'K', 'L', 'M', 'N'] G
+2021-12-04 22:52:34,081 : DEBUG : O RREQ ['B', 'F', 'I', 'J', 'K', 'L', 'M', 'N', 'O'] G
+2021-12-04 22:52:34,082 : DEBUG : P RREQ ['B', 'F', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P'] G
+2021-12-04 22:52:34,084 : DEBUG : B DATA ['B', 'F', 'G'] 
+2021-12-04 22:52:34,085 : DEBUG : F DATA ['B', 'F', 'G'] 
+2021-12-04 22:52:34,085 : DEBUG : G DACK ['B', 'F', 'G'] 
+2021-12-04 22:52:34,097 : DEBUG : F DACK ['B', 'F', 'G'] 
+2021-12-04 22:52:34,097 : DEBUG : B SACK ['B', 'F', 'G'] 
+2021-12-04 22:52:34,097 : DEBUG : F SACK ['B', 'F', 'G'] 
+2021-12-04 22:52:34,098 : INFO : G received data: Test data starting at B and ending at G
+2021-12-04 22:52:34,098 : INFO : Total hops: 6
+2021-12-04 22:52:35,103 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:35,103 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:35,104 : DEBUG : A RREQ ['A'] P
+2021-12-04 22:52:35,104 : DEBUG : B RREQ ['A', 'B'] P
+2021-12-04 22:52:35,104 : DEBUG : C RREQ ['A', 'B', 'C'] P
+2021-12-04 22:52:35,105 : DEBUG : D RREQ ['A', 'B', 'C', 'D'] P
+2021-12-04 22:52:35,105 : DEBUG : F RREQ ['A', 'B', 'C', 'D', 'F'] P
+2021-12-04 22:52:35,105 : DEBUG : I RREQ ['A', 'B', 'C', 'D', 'F', 'I'] P
+2021-12-04 22:52:35,106 : DEBUG : H RREQ ['A', 'B', 'C', 'D', 'F', 'I', 'H'] P
+2021-12-04 22:52:35,106 : DEBUG : J RREQ ['A', 'B', 'C', 'D', 'F', 'I', 'J'] P
+2021-12-04 22:52:35,106 : DEBUG : K RREQ ['A', 'B', 'C', 'D', 'F', 'I', 'J', 'K'] P
+2021-12-04 22:52:39,023 : DEBUG : A RREQ ['A'] P
+2021-12-04 22:52:44,051 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:44,051 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:44,052 : DEBUG : C RREQ ['C'] I
+2021-12-04 22:52:44,052 : DEBUG : D RREQ ['C', 'D'] I
+2021-12-04 22:52:44,052 : DEBUG : E RREQ ['C', 'D', 'E'] I
+2021-12-04 22:52:44,053 : DEBUG : F RREQ ['C', 'D', 'F'] I
+2021-12-04 22:52:44,053 : DEBUG : G RREQ ['C', 'D', 'F', 'G'] I
+2021-12-04 22:52:44,053 : DEBUG : H RREQ ['C', 'D', 'F', 'G', 'H'] I
+2021-12-04 22:52:44,054 : DEBUG : I RREP ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,054 : DEBUG : H RREP ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,054 : DEBUG : G RREP ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,054 : DEBUG : F RREP ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,054 : DEBUG : D RREP ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,055 : DEBUG : C DATA ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,055 : DEBUG : D DATA ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,055 : DEBUG : F DATA ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,055 : DEBUG : G DATA ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,056 : DEBUG : H DATA ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,062 : DEBUG : I DACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,074 : DEBUG : H DACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,085 : DEBUG : G DACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,091 : DEBUG : F DACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,115 : DEBUG : D DACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,137 : DEBUG : C SACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,143 : DEBUG : D SACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,143 : DEBUG : F SACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,155 : DEBUG : G SACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,160 : DEBUG : H SACK ['C', 'D', 'F', 'G', 'H', 'I'] 
+2021-12-04 22:52:44,161 : INFO : I received data: Test data starting at C and ending at I
+2021-12-04 22:52:44,161 : INFO : Total hops: 15
+2021-12-04 22:52:45,147 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:45,148 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:45,149 : DEBUG : J DATA ['J', 'I', 'F', 'D', 'C', 'B', 'A'] 
+2021-12-04 22:52:45,149 : DEBUG : J DATA ['J', 'I', 'F', 'D', 'C', 'B', 'A'] 
+2021-12-04 22:52:47,322 : DEBUG : J RREQ ['J'] A
+2021-12-04 22:52:47,322 : DEBUG : I RREQ ['J', 'I'] A
+2021-12-04 22:52:47,323 : DEBUG : F RREQ ['J', 'I', 'F'] A
+2021-12-04 22:52:47,323 : DEBUG : B RREQ ['J', 'I', 'F', 'B'] A
+2021-12-04 22:52:47,323 : DEBUG : A RREP ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,323 : DEBUG : B RREP ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,324 : DEBUG : F RREP ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,324 : DEBUG : I RREP ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,325 : DEBUG : C RREQ ['J', 'I', 'F', 'B', 'C'] A
+2021-12-04 22:52:47,325 : DEBUG : D RREQ ['J', 'I', 'F', 'B', 'C', 'D'] A
+2021-12-04 22:52:47,326 : DEBUG : E RREQ ['J', 'I', 'F', 'B', 'C', 'D', 'E'] A
+2021-12-04 22:52:47,327 : DEBUG : G RREQ ['J', 'I', 'F', 'G'] A
+2021-12-04 22:52:47,328 : DEBUG : H RREQ ['J', 'I', 'F', 'G', 'H'] A
+2021-12-04 22:52:47,329 : DEBUG : K RREQ ['J', 'K'] A
+2021-12-04 22:52:47,329 : DEBUG : L RREQ ['J', 'K', 'L'] A
+2021-12-04 22:52:47,330 : DEBUG : M RREQ ['J', 'K', 'L', 'M'] A
+2021-12-04 22:52:47,330 : DEBUG : N RREQ ['J', 'K', 'L', 'M', 'N'] A
+2021-12-04 22:52:47,332 : DEBUG : O RREQ ['J', 'K', 'L', 'M', 'N', 'O'] A
+2021-12-04 22:52:47,333 : DEBUG : P RREQ ['J', 'K', 'L', 'M', 'N', 'O', 'P'] A
+2021-12-04 22:52:47,334 : DEBUG : J DATA ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,334 : DEBUG : I DATA ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,341 : DEBUG : F DATA ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,358 : DEBUG : B DATA ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,359 : DEBUG : A DACK ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,359 : DEBUG : B DACK ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,359 : DEBUG : F DACK ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,383 : DEBUG : I DACK ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,383 : DEBUG : J SACK ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,394 : DEBUG : I SACK ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,406 : DEBUG : F SACK ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,406 : DEBUG : B SACK ['J', 'I', 'F', 'B', 'A'] 
+2021-12-04 22:52:47,406 : INFO : A received data: Test data starting at J and ending at A
+2021-12-04 22:52:47,406 : INFO : Total hops: 14
+2021-12-04 22:52:48,398 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:48,399 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]
+2021-12-04 22:52:48,400 : DEBUG : H DATA ['H', 'I', 'J'] 
+2021-12-04 22:52:48,400 : DEBUG : I DATA ['H', 'I', 'J'] 
+2021-12-04 22:52:48,407 : DEBUG : J DACK ['H', 'I', 'J'] 
+2021-12-04 22:52:48,414 : DEBUG : I DACK ['H', 'I', 'J'] 
+2021-12-04 22:52:48,420 : DEBUG : H SACK ['H', 'I', 'J'] 
+2021-12-04 22:52:48,420 : DEBUG : I SACK ['H', 'I', 'J'] 
+2021-12-04 22:52:48,420 : INFO : J received data: Test data starting at H and ending at J
+2021-12-04 22:52:48,420 : INFO : Total hops: 6
+2021-12-04 22:52:49,423 : INFO : Nodes=[A:live, B:live, C:live, D:live, E:live, F:live, G:live, H:live, I:live, J:live, K:live, L:live, M:live, N:live, O:live, P:live]
+2021-12-04 22:52:49,424 : INFO : Links=[A-B:live, B-C:live, B-F:live, C-D:live, D-E:live, D-F:live, F-G:live, F-I:live, G-H:live, H-I:live, I-J:live, J-K:live, K-L:live, K-M:live, L-M:live, L-N:live, L-O:live, L-P:live, M-N:live, N-O:live, O-P:live]

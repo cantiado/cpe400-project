@@ -346,7 +346,6 @@ class Node:
             return
         # else, forward RERR backwards on route
         else:
-            print(self.id)
             self.__forward('RERR', route.copy(), data = delroute)
     
     def __delete(self, delroute: list):

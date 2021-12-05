@@ -1,0 +1,424 @@
+=================== Test 1 ===================
+Node F sending data to Node M
+Node F timed out. Unable to find route to Node M
+Continue trying? [Y/N]
+Y
+Node F timed out. Unable to find route to Node M
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+9.520372867584229
+
+
+Node N sending data to Node M
+Node M received data: Test data starting at N and ending at M
+Total hops: 9
+Time to finish tranmission: 
+1.068371057510376
+
+
+Node F sending data to Node K
+Node K received data: Test data starting at F and ending at K
+Total hops: 15
+Time to finish tranmission: 
+1.045248031616211
+
+
+Node P sending data to Node A
+Node P timed out. Unable to find route to Node A
+Continue trying? [Y/N]
+Y
+Node P timed out. Unable to find route to Node A
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+9.455265045166016
+
+
+Node H sending data to Node G
+Node G received data: Test data starting at H and ending at G
+Total hops: 3
+Time to finish tranmission: 
+1.012472152709961
+
+
+Node F sending data to Node M
+Node F timed out. Unable to find route to Node M
+Continue trying? [Y/N]
+Y
+Node M received data: Test data starting at F and ending at M
+Total hops: 15
+Time to finish tranmission: 
+5.180052995681763
+
+
+Node H sending data to Node F
+Node F received data: Test data starting at H and ending at F
+Total hops: 6
+Time to finish tranmission: 
+1.0042798519134521
+
+
+Node D sending data to Node K
+Node K received data: Test data starting at D and ending at K
+Total hops: 24
+Time to finish tranmission: 
+1.1461310386657715
+
+
+Node C sending data to Node G
+Node G received data: Test data starting at C and ending at G
+Total hops: 9
+Time to finish tranmission: 
+1.0070531368255615
+
+
+Node C sending data to Node A
+Node A received data: Test data starting at C and ending at A
+Total hops: 6
+Time to finish tranmission: 
+1.0587892532348633
+
+=================== Test 2 ===================
+Node D sending data to Node P
+Node D timed out. Unable to find route to Node P
+Continue trying? [Y/N]
+Y
+Node D timed out. Unable to find route to Node P
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+9.939944982528687
+
+
+Node F sending data to Node J
+Node J received data: Test data starting at F and ending at J
+Total hops: 12
+Time to finish tranmission: 
+1.0751409530639648
+
+
+Node M sending data to Node A
+Node A received data: Test data starting at M and ending at A
+Total hops: 18
+Time to finish tranmission: 
+1.050004005432129
+
+
+Node M sending data to Node D
+Node M timed out. Unable to find route to Node D
+Continue trying? [Y/N]
+Y
+Node D received data: Test data starting at M and ending at D
+Total hops: 21
+Time to finish tranmission: 
+5.767498016357422
+
+
+Node O sending data to Node G
+Node G received data: Test data starting at O and ending at G
+Total hops: 18
+Time to finish tranmission: 
+1.1324219703674316
+
+
+Node E sending data to Node D
+Node D received data: Test data starting at E and ending at D
+Total hops: 3
+Time to finish tranmission: 
+1.0199480056762695
+
+
+Node B sending data to Node O
+Node B unable to forward data to Node O
+Continue trying? [Y/N]
+Y
+Node O received data: Test data starting at B and ending at O
+Total hops: 32
+Time to finish tranmission: 
+4.262465000152588
+
+
+Node H sending data to Node M
+Node M received data: Test data starting at H and ending at M
+Total hops: 12
+Time to finish tranmission: 
+1.0273652076721191
+
+
+Node M sending data to Node H
+Node M unable to forward data to Node H
+Continue trying? [Y/N]
+Y
+Node H received data: Test data starting at M and ending at H
+Total hops: 21
+Time to finish tranmission: 
+4.235945224761963
+
+
+Node N sending data to Node G
+Node N unable to forward data to Node G
+Continue trying? [Y/N]
+Y
+Node D received data: Test data starting at N and ending at G
+Total hops: 29
+Time to finish tranmission: 
+3.123939037322998
+
+=================== Test 3 ===================
+Node L sending data to Node K
+Node K received data: Test data starting at L and ending at K
+Total hops: 3
+Time to finish tranmission: 
+1.014232873916626
+
+
+Node A sending data to Node C
+Node A timed out. Unable to find route to Node C
+Continue trying? [Y/N]
+Y
+Node C received data: Test data starting at A and ending at C
+Total hops: 6
+Time to finish tranmission: 
+6.809268951416016
+
+
+Node E sending data to Node F
+Node F received data: Test data starting at E and ending at F
+Total hops: 6
+Time to finish tranmission: 
+1.043485164642334
+
+
+Node H sending data to Node J
+Node J received data: Test data starting at H and ending at J
+Total hops: 12
+Time to finish tranmission: 
+1.0841670036315918
+
+
+Node A sending data to Node N
+Node A timed out. Unable to find route to Node N
+Continue trying? [Y/N]
+Y
+Node A timed out. Unable to find route to Node N
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+9.184869289398193
+
+
+Node J sending data to Node H
+Node J unable to forward data to Node H
+Continue trying? [Y/N]
+Y
+Node F received data: Test data starting at J and ending at H
+Total hops: 14
+Time to finish tranmission: 
+3.163825035095215
+
+
+Node N sending data to Node E
+Node N timed out. Unable to find route to Node E
+Continue trying? [Y/N]
+Y
+Node N timed out. Unable to find route to Node E
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+10.34653091430664
+
+
+Node I sending data to Node M
+Node I timed out. Unable to find route to Node M
+Continue trying? [Y/N]
+Y
+Node M received data: Test data starting at I and ending at M
+Total hops: 12
+Time to finish tranmission: 
+5.056988716125488
+
+
+Node J sending data to Node I
+Node F received data: Test data starting at J and ending at I
+Total hops: 12
+Time to finish tranmission: 
+1.025527000427246
+
+
+Node G sending data to Node C
+Node C received data: Test data starting at G and ending at C
+Total hops: 9
+Time to finish tranmission: 
+1.0463600158691406
+
+=================== Test 4 ===================
+Node L sending data to Node H
+Node L timed out. Unable to find route to Node H
+Continue trying? [Y/N]
+Y
+Node L timed out. Unable to find route to Node H
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+8.984776258468628
+
+
+Node C sending data to Node F
+Node F received data: Test data starting at C and ending at F
+Total hops: 6
+Time to finish tranmission: 
+1.0458791255950928
+
+
+Node M sending data to Node D
+Node M timed out. Unable to find route to Node D
+Continue trying? [Y/N]
+Y
+Node M timed out. Unable to find route to Node D
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+10.008116960525513
+
+
+Node F sending data to Node D
+Node D received data: Test data starting at F and ending at D
+Total hops: 3
+Time to finish tranmission: 
+1.0246860980987549
+
+
+Node I sending data to Node K
+Node K received data: Test data starting at I and ending at K
+Total hops: 6
+Time to finish tranmission: 
+1.072643756866455
+
+
+Node P sending data to Node N
+Node N received data: Test data starting at P and ending at N
+Total hops: 6
+Time to finish tranmission: 
+1.012314796447754
+
+
+Node J sending data to Node A
+Node J timed out. Unable to find route to Node A
+Continue trying? [Y/N]
+Y
+Node J timed out. Unable to find route to Node A
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+10.251518964767456
+
+
+Node F sending data to Node B
+Node B received data: Test data starting at F and ending at B
+Total hops: 3
+Time to finish tranmission: 
+1.0289840698242188
+
+
+Node J sending data to Node P
+Node J timed out. Unable to find route to Node P
+Continue trying? [Y/N]
+Y
+Node J timed out. Unable to find route to Node P
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+10.448952198028564
+
+
+Node K sending data to Node N
+Node N received data: Test data starting at K and ending at N
+Total hops: 6
+Time to finish tranmission: 
+1.022355079650879
+=================== Test 5 ===================
+Node D sending data to Node A
+Node A received data: Test data starting at D and ending at A
+Total hops: 9
+Time to finish tranmission: 
+1.050076961517334
+
+
+Node K sending data to Node M
+Node M received data: Test data starting at K and ending at M
+Total hops: 3
+Time to finish tranmission: 
+1.014435052871704
+
+
+Node J sending data to Node K
+Node K received data: Test data starting at J and ending at K
+Total hops: 3
+Time to finish tranmission: 
+1.0104899406433105
+
+
+Node F sending data to Node L
+Node F timed out. Unable to find route to Node L
+Continue trying? [Y/N]
+Y
+Node L received data: Test data starting at F and ending at L
+Total hops: 18
+Time to finish tranmission: 
+4.887656211853027
+
+
+Node A sending data to Node F
+Node A unable to forward data to Node F
+Continue trying? [Y/N]
+Y
+Node F received data: Test data starting at A and ending at F
+Total hops: 8
+Time to finish tranmission: 
+3.2944869995117188
+
+
+Node B sending data to Node G
+Node B timed out. Unable to find route to Node G
+Continue trying? [Y/N]
+Y
+Node G received data: Test data starting at B and ending at G
+Total hops: 6
+Time to finish tranmission: 
+5.1921608448028564
+
+
+Node A sending data to Node P
+Node A timed out. Unable to find route to Node P
+Continue trying? [Y/N]
+Y
+Node A timed out. Unable to find route to Node P
+Continue trying? [Y/N]
+N
+Time to finish tranmission: 
+8.948472023010254
+
+
+Node C sending data to Node I
+Node I received data: Test data starting at C and ending at I
+Total hops: 15
+Time to finish tranmission: 
+1.0963430404663086
+
+
+Node J sending data to Node A
+Node J unable to forward data to Node A
+Continue trying? [Y/N]
+Y
+Node A received data: Test data starting at J and ending at A
+Total hops: 14
+Time to finish tranmission: 
+3.250983953475952
+
+
+Node H sending data to Node J
+Node J received data: Test data starting at H and ending at J
+Total hops: 6
+Time to finish tranmission: 
+1.024824857711792

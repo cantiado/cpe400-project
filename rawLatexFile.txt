@@ -1,0 +1,137 @@
+\documentclass[11pt]{article}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[a4paper,width=175mm,top=25mm,bottom=25mm,bindingoffset=6mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{etoolbox}
+\usepackage{graphicx, float}
+
+\title{Navigating a Faulty Network \\ [1ex] \large CPE 400 Project}
+\author{Carl Antiado, Michael Dorado, Mackenzie Zappe}
+\date{December 6 2021}
+
+\begin{document}
+\maketitle
+\begin{multicols}{2}
+
+\begin{abstract}
+write at end to summarize each section
+\end{abstract}
+
+\section{Introduction}
+In a network topology of any size, a faulty node or link can mean loss of data that can effect the proceedings of the organization that is dependent on the network. In these cases, it is crucial to have a backup plan to circumvent the faultiness of the network. Our project focuses on the implementation of how to circumvent faultiness of a network. 
+
+Our main goal with this project is to minimize loss as much as possible. We wanted to ensure delivery of data transmission from the designated source node to the designated destination node, negligible of node or link crashes along the route from source to destination. Because of the no-loss approach, our team has decided to reduce the importance of optimization for this simulation; therefore, the length of time for data transmission is expected to be longer than if optimization was also prioritized. We hoped that once we prioritized the lack of data loss, data transmission would be guaranteed upon all reasonable attempts of access. 
+
+\section{Background}
+Every computer application has been built with different degrees of fault tolerance which is the system's ability to remain operational in the event that one or more of its components becomes operational or damaged. In a computer networking example, faults can occur as a result of configuration errors, line damage, sudden hardware failures, or cyber-attacks \cite{pareFailure2021}. Because there are multiple reasons that could induce a network fault, crashes can occur at random intervals. For the scope of this project we completely randomized the crashing capabilities of the project. In real-life scenarios, external factors like civil unrest or financial strain may increase the likelihood of crashes on the network.  
+
+
+characteristics of faulty network and dsr methods 
+-Variation DSR \cite{xueAdHoc2003}
+
+\section{Simulation}
+To simulate a network and its functionalities, we designed node and link classes written in python. Multi-threading techniques were employed to simulate the concurrent capabilities of real-world networks. Each node in a network must be able to work whilst other nodes in the network do work. Both the link and node classes were developed with crashing capabilities to be utilized during the testing phase of the project. We wanted to simulate the possibilities of neither the node or link crashing in the network, both the node and link crashing, one crashing and the other operating as normal.  
+
+The node class was used to build the initial network topology. Each node had capabilities to run the DSR algorithm and the associated RREQ, RREP, RERR functions. These functions will be further explained in the Routing Algorithm section. Each node also had the capability to store routes to different nodes and count the number of hops it took to get to the other node. The link class was designed to store the two nodes connecting. This functionality is essential to find routes from the source node to the destination node.  
+
+\begin{figure}[H]
+    \includegraphics[width=8cm]{networkTopology.png}
+    \caption{Simulated network topology used for project tests}
+    \label{fig:networkTopology}
+\end{figure}
+
+For the project, we had to create an initial network topology. The idealized standard network is demonstrated in figure \ref{fig:networkTopology}. Each node has an associated name and an index number that was used to simulate the links between the nodes. 
+
+\subsection{Assumptions}
+For the simulation we tried to include as many real-world factors as possible. We did have to make some base assumptions to keep the problem minimally complex to solve. 
+
+Assumptions made in the simulated network:
+\begin{enumerate}
+    \item In the event that the availability of a node or link changes in the duration of time between the route portion being checked as viable and the data being sent over that segment of the route, we have deemed this attempt to access as unreasonable. The algorithm acknowledges this as an edge case; however, for simplicity of the project, we neglected to implement a solution for this edge case. 
+    \item Every established link is bidirectional. For example if it is known that A is linked to B, then inherently it is known that B is linked to A. 
+    \item The transmission of data is relatively instantaneous; therefore, there are negligible transmission times.
+    \item The multi-threading approach to our network implementation would prevent any data collisions from taking place.
+    \item Upon initialization, all the links and nodes are set to alive.
+    \item The network topology is static for the entirety of the tests; it does not change with each trial or iteration. 
+\end{enumerate}
+
+\section{Routing Algorithm}
+The algorithm we chose to work with was a Dynamic Source Routing (DSR) algorithm. A DSR has the source node flood the network with Route Requests (RREQ) to discover a path to the destination. This path is found by having each node that receives the RREQ append its name to the list of routes and forward the RREQ on to nodes it is connected to. Once this path finds its way to the destination node, the destination node will send a Route Reply (RREP) along the discovered path to the source node, which will prompt the source node to send the data along the specified path to the destination node. 
+
+Our variation on the DSR algorithm comes from implementation an acknowledgment system to guarantee that data has been received and both parties are aware of that fact. Once a source node has received a RREP, it will transmit data along the specified path and upon data arrival the destination node with then send a Destination Acknowledgment (DACK) back to the source node. When the source node receives the DACK it will send one final Source Acknowledgment (SACK) back to the destination node. This process ensures successful data transfer for a transaction to be considered complete.
+
+In the event of a node failure, the sending node, regardless of the last transmission sent, will receive a Route Error (RERR). When this happens, the sending node will attempt to find another path to the destination from the list of known paths. If this is not accomplished in the Round Trip Time (RTT) window, the system will prompt the user to give up on a transaction or attempt to restart the transaction.
+
+\subsection{RREQ} 
+The Route Request function serves as the first step in the DSR. A node wishing to send data out to another node will flood the network with a RREQ. Each time a neighbor node receives a RREQ, it appends its name to the RREQ and forwards it to all neighbors, who in turn complete the same process. These steps are required since a node is only aware of nodes that it's connected to, this process provides a network topology can be understood by the nodes within the network.
+
+The RREQ stops when it finds the destination node, that is the destination node will append its own name to the RREQ, but does not forward the RREQ. From this step, the destination node will use the RREQ to generate a RREP, discussed in the next section.
+\subsection{RREP}
+The Route Reply function serves as a way of agreeing on a specific route to be used by source and destination nodes. Once a destination node has received a RREQ, the destination node will then send a RREP back to the source node along the path specified in the RREQ. The RREP prompts the source node to begin transmitting DATA along the route, this is discussed in the 'DATA' section further.
+\subsection{RERR}
+If at any point during a transmission a node fails and makes a previously found route inoperable, this method will transmit a Route Error back to the sender of the transmission, be it the source or destination node. When this error is received by the sender, it will search its RREQ and determine if there is another route to send the data along. If such a route exists, it will route the transmission along that path, carrying extra info to update the transmissions receiver with the updated path. If no other paths exists, it will prompt the user to try and send the data again. If the user continues, the transmission will begin again from the beginning; alternatively the user may choose to abort the operation entirely.
+\subsection{DATA}
+This variable is the actual data that a transaction wishes to transmit. For our purposes, the data is a text string, but this could be adapted easily. The DATA packet is sent after the source node receives a RREP. Once received, the source node sends the DATA along the path specified in the RREP.
+\subsection{ACK}
+This method acts as a guarantee of data transmission. Once a destination node has received the DATA packet, it will send Destination Acknowledgment (DACK) along the specified path to the source node. This is to inform the source node that the DATA packet has been received. After which, the source node will send a Source Acknowledgment (SACK) back along the path to the destination node. When the SACK has been received, the destination node will now have confirmation that the source node understands that data was transmitted successfully.
+
+\section{Strategies}
+The test script that is used in the evaluation section has a large focus on random nodes failing at random times. When a new message is going to be sent out, up to eight and no less than one of the nodes can fail. When a node fails, it has zero functionality and is essentially turned off. Each of the nodes has a random time to recover from a failure ranging from one to three seconds. This functionality is implemented to create a network that fails randomly on random nodes. The goal with this approach is to simulate a network that is shifting and changing as data is being transmitted through it, such that the nodes within the network must dynamically reroute as different nodes fail and recover.
+\subsection{Trials}
+This script was designed to test two different metrics, delay and loss. Using these two metrics we can accurately look at the stability and efficiency that the routing protocol provided the network.
+\subsection{Evaluation Metrics}
+\subsubsection{Metric 1}
+Loss within this protocol is defined as an unrecoverable data transmission. While errors occur often and are automatically handled by the algorithm, there are cases in which the algorithm can't recover and the transmission is aborted. 
+
+Whenever a error in route is detected, the user will be prompted if to try and re-transmit the data. During our testing  one extra attempt to transmit the data was always made in the event of an error. If that attempt spawned another error of the same type, that would be considered an unrecoverable loss and that transmission will be aborted.
+
+\subsubsection{Metric 2}
+The metric of delay is a measurement of the algorithms efficiency in terms of transmission speeds. The delay is measured in units of seconds and has a corresponding value for each transmission, spanning from when the command to transmit data is inputted to the moment that the transaction is considered finished. 
+
+This means that if the transaction completes as expected we will get a time representation of a perfect  scenario in which all components functioned as expected. Given an error, the delay value will account for the time the user took to try and re-transmit data and thus give a larger value than a transmission that had no issues. 
+
+\section{Evaluation of Results}
+
+\begin{center}
+Figure 2: The average results of five tests, consisting of ten transmissions each
+\begin{tabular}{ |c|c|c|c| } 
+ \hline
+  &Avg. Hops &Avg. Delay & Losses\\
+ \hline
+ Test 1 & 10.86 & 3.18 Sec& 2\\
+ \hline
+ Test 2 & 18.44 & 3.28 Sec & 1\\
+ \hline
+ Test 3 & 9.25 & 3.79 Sec & 2\\
+ \hline
+ Test 4 & 5 & 4.58 Sec & 4\\
+ \hline
+ Test 5 & 9.11 & 3.06 Sec & 1\\
+ \hline
+\end{tabular}
+\end{center}
+The test was ran five separate times, with 10 transmissions happening during the course of each test. If a transmission was successful, its result would display the number of hops it took as well as the time delay required to complete the transaction. These values were averaged in Figure 1 to show the tendencies of the network when sending multiple transmissions. 
+
+If a transmission failed, it was counted as a loss and did not contribute to the average of number of hops. However, the delay from the failed transmission would still contribute to the average delay time, as it still affected the efficiency of the system.
+\subsection{Metric 1 Evaluation}
+On average, we lost two out of every ten transmissions. This happened largely due to routing errors that could not be resolved. There is a clear correspondence between the number of losses and the average number of hopes, with higher loss count reflecting a lower average hop count. Our team believes this is due to the routing algorithm having a greater chance to fail with a larger route to transmit along. Each node has a chance to fail, so a transmission that makes fifteen hops has a greater chance of failure than a transmission that only takes three hops. Since lost transmissions are not counted in the average hops, it follows that a lower hop count caused by smaller routes would arise in the presence of many lost transmission, as seen in test four.
+
+\subsection{Metric 2 Evaluation}
+Through testing, we observed an average delay time of three and a half seconds per transmission, that is, every transmission took three and a half seconds to generate, route, send, and acknowledge start to finish. Whenever loss occurred in transmission, we saw higher delay times due to our reliance on a timeouts for error detection, whereas the number of hops a transmission had to make had a much smaller impact on the delay time. This showcased that loss errors are more costly than transmission errors in terms of delay. This in large part due to the fact that data transmission is near instantaneous in our simulation, as we are only transmitting a string, which has negligible delay between nodes performing a data forward.
+
+\section{Improvements}
+This protocol was designed to minimize unregistered loss, so it was designed to ensure data delivery and re-route data when needed. There were a short comings with our design that could be further improved upon.
+\begin{enumerate}
+    \item Unrecoverable loss was still present in the protocol. Ideally, this protocol should find a way to recover these catastrophic failures, we were only able to recover from certain errors. 
+    \item When a recoverable loss would occur, the transmission would be restarted if prompted by the user. Instead of this "torch and burn" approach, it would be a more efficient method to simply send a Route Request from the last sender in the transaction.
+\end{enumerate}
+
+
+\section{Conclusion}
+The goal of this protocol design was to guarantee data delivery on a Dynamic Source Routing algorithm, which was accomplished. Ensuring data delivery was a more challenging aspect than we first considered, as the some transactions would have to be restarted to complete which led to large hop counts and large delay times. Another consideration that became vividly important was defining the expected behavior of the network; we originally had approached the design of this protocol with a semi-stable network in mind. We concluded that the point of our protocol was to ensure data delivery and acknowledgment for a rapidly failing system, this shifted the design to a frame of mind where we guarantee a problem on every transmission. Designing a protocol for a faulty network proved challenging and the problems we faced were often not the ones we anticipated.
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+\end{multicols}
+\end{document}

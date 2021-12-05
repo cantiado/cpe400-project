@@ -1,0 +1,19 @@
+Test 1 Losses: 2
+Test 1 Avg Delay: 3.18 seconds
+Test 1 Avg Hops: 10.86 hops
+
+Test 2 Losses: 1
+Test 2 Avg Delay: 3.28 seconds
+Test 2 Avg Hops: 18.44 hops
+
+Test 3 Losses: 2
+Test 3 Avg Delay: 3.79 seconds
+Test 3 Avg Hops: 9.25 hops
+
+Test 4 Losses: 4
+Test 4 Avg Delay: 4.58 seconds
+Test 4 Avg Hops: 5 hops
+
+Test 5 Losses: 1
+Test 5 Avg Delay: 3.06 seconds
+Test 5 Avg Hops: 9.11 hops
