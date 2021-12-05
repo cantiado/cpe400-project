@@ -1,11 +1,12 @@
 from threading import Thread, Lock, Event
 import logging
 import time
+import random
 
 class Node:
     ids = []
     RTT = 3     # num of seconds till timeout
-    recover_time = 1 # num of seconds to recover
+    recover_time = random.uniform(1, 3) # num of seconds to recover
     auto_recover = True
     error_count = 0
     num_hops = 0
@@ -75,7 +76,7 @@ class Node:
                         retry += 1
         # if found route but all failed, no other routes available
         if hasroute:
-            print('here')
+            #print('here')
             print(f'Node {self.id} unable to forward data to Node {dest}')
             # prompt user to continue trying to RREQ. default is yes
             x = input(f'Continue trying? [Y/N]\n')
@@ -137,7 +138,7 @@ class Node:
 
         # else, timeout
         else:
-            print('there')
+            #print('there')
             print(f'Node {self.id} timed out. Unable to find route to Node {dest}')
         
         # prompt user to continue trying. default is yes
@@ -168,6 +169,7 @@ class Node:
                     if link == Link(self,n) and link.alive and n.alive:
                         t = Thread(target=n.__rreq, args=(route.copy(),dest), name=f'{n.id}.RREQ')
                         t.start()
+                        t.join()
             return
         # RREP: send RREP to prev node in route
         if msg == 'RREP':
@@ -344,6 +346,7 @@ class Node:
             return
         # else, forward RERR backwards on route
         else:
+            print(self.id)
             self.__forward('RERR', route.copy(), data = delroute)
     
     def __delete(self, delroute: list):
@@ -472,6 +475,7 @@ def recover(u):
                 u.alive = True
             finally:
                 u.lock.release()
+            #print(f"node recovered {u.id}")
         else:
             print(f'Node {u} already live')
     else:
